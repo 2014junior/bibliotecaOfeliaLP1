@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Biblioteca | Reg. Alumno</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="css/skin-blue.min.css">
+  <link rel="stylesheet" href="DataTables/media/css/jquery.dataTables.min.css">
+  <!-- jQuery -->
+  <script type="text/javascript" language="javascript"  src="DataTables/media/js/jquery.js"></script>
+  <!-- Datatable -->
+  <script type="text/javascript" language="javascript"  src="DataTables/media/js/jquery.dataTables.js"></script>
+ <script>
+        $(function () {
+            $("#tablaAlumnos").DataTable({
+                "language": {
+                    "sProcessing": "Procesando...",
+                    "sLengthMenu": "Mostrar _MENU_ registros",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Buscar:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    }
+                }
+            });
+            $("#tablaDocentes").DataTable({
+                "language": {
+                    "sProcessing": "Procesando...",
+                    "sLengthMenu": "Mostrar _MENU_ registros",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Buscar:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    }
+                }
+            });
+			$("#tablaBibliotecarios").DataTable({
+                "language": {
+                    "sProcessing": "Procesando...",
+                    "sLengthMenu": "Mostrar _MENU_ registros",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Buscar:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    }
+                }
+            });
+
+        });
+
+    </script>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+ <header class="main-header">
+    <!-- Logo -->
+    <a href="inicio.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>BI</b>BL</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>BIBLIOTECA </b> OFELIA</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">USUARIO</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  USUARIO - ADMIN
+                  <small>OFELIA VELASQUEZ</small>
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Perfil</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Salir</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Usuario - Admin</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Conectado</a>
+        </div>
+      </div>
+
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">MENÚ - PRINCIPAL</li>
+        <li>
+          <a href="inicio.html">
+            <i class="glyphicon glyphicon-home"></i> <span>Página Principal</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-edit"></i>
+            <span>Registro</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="Libro.html"><i class="fa fa-circle-o"></i>Libro</a></li>
+          </ul>
+          <ul class="treeview-menu">
+            <li><a href="Alumno.html"><i class="fa fa-circle-o"></i>Alumno</a></li>
+          </ul>
+            <ul class="treeview-menu">
+            <li><a href="Docente.html"><i class="fa fa-circle-o"></i>Docente</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        MODÚLO PERSONA
+        <small>Registrar Docente</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="inicio.html"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
+        <li class="active">Registrar Docente</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+      	<div class="col-md-12">
+
+            <button class="btn btn-primary" data-toggle="modal" data-target="#addDocente"><i class="ion-person-add"></i> Agregar Docente</button>
+
+            <br><br>
+      	</div>
+      </div>
+
+      <div class="row">
+      	<div class="col-md-12">
+      		<div class="box collapsed-box">
+      			<div class="box-header with-border">
+                  <h3 class="box-title"> REGISTRO DE DOCENTES</h3>
+                  <div class="box-tools pull-right">
+                  </div>
+                </div>
+                <div class="">
+      			  <div class="row">
+                     <div class="container-fluid">
+                         <div class="col-lg-12">
+                            <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                               <div class="table-responsive">
+                                 <table id="tablaDocentes" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                                       <thead>
+                                            <tr role="row">
+                                               <th>#</th>
+                                               <th>NOMBRE</th>
+                                               <th>APELLIDOS</th>
+                                               <th>GÉNERO</th>
+                                               <th>FECHA DE NACIMIENTO</th>
+                                               <th>TIPO DE DOCUMENTO</th>
+                                               <th>DIRECCIÓN</th>
+                                               <th>TURNO</th>
+                                               <th>CODIGO MODULAR</th>
+                                               <th>CODIGO DE PLAZA</th>
+                                               <th>TÍTULO</th>
+                                               <th>ESPECIALIDAD</th>
+                                                <th>ESCALA</th>
+                                               <th>CONDICION LABORAL</th>
+                                               <th>TIEMPO DE SERVICIOS</th>
+                                               <th>CARGO</th>
+                                               <th>TIPO DE DOCENTE</th>
+                                               <th>TELÉFONO</th>
+                                            </tr>
+                                        </thead>
+
+                                      <tbody>
+                                        <tr role="row" class="odd">
+                                           <td class="sorting_1">1</td>
+                                           <td>asas</td>
+                                           <td>asasas</td>
+                                           <td>asas</td>
+                                           <td>asasas</td>
+                                           <td>asas</td>
+                                           <td>asasas</td>
+                                           <td>asasas</td>
+                                           <td>asasas</td>
+                                           <td>asasas</td>
+                                           <td>asasas</td>
+                                           <td>asasas</td>
+                                           <td>asasas</td>
+                                           <td>asasas</td>
+                                           <td>asasas</td>
+                                           <td>asasas</td>
+                                           <td>asasas</td>
+                                           <td>asasas</td>
+                                           <td>
+                                             <center>
+                                                <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                             </center>
+                                          </td>
+                                        </tr>
+
+                                     </tbody>
+                                     <tfoot>
+                                         <tr>
+                                             <th rowspan="1" colspan="1">#</th>
+                                             <th rowspan="1" colspan="1">NOMBRE</th>
+                                             <th rowspan="1" colspan="1">APELLIDOS</th>
+                                             <th rowspan="1" colspan="1">GÉNERO</th>
+                                             <th rowspan="1" colspan="1">FECHA DE NACIMIENTO</th>
+                                             <th rowspan="1" colspan="1">TIPO DE DOCUMENTO</th>
+                                             <th rowspan="1" colspan="1">DIRECCIÓN</th>
+                                             <th rowspan="1" colspan="1">TURNO</th>
+                                             <th rowspan="1" colspan="1">CODIGO MODULAR</th>
+                                             <th rowspan="1" colspan="1">CODIGO DE PLAZA</th>
+                                             <th rowspan="1" colspan="1">TITULO</th>
+                                             <th rowspan="1" colspan="1">ESPECIALIDAD</th>
+                                             <th rowspan="1" colspan="1">ESCALA</th>
+                                             <th rowspan="1" colspan="1">CONDICIÓN LABORAL</th>
+                                             <th rowspan="1" colspan="1">TIEMPO DE SERVICIOS</th>
+                                             <th rowspan="1" colspan="1">CARGO</th>
+                                             <th rowspan="1" colspan="1">TIPO DE DOCENTE</th>
+                                             <th rowspan="1" colspan="1">TELÉFONO</th>
+                                         </tr>
+                                     </tfoot>
+                                  </table>
+                               </div>
+                            </div>
+                         </div>
+                     </div>
+                  </div>
+      		    </div>
+      		</div>
+
+      	</div>
+      </div>
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 2.3.8
+    </div>
+    <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+    reserved.
+  </footer>
+   <!--MODAL DE AGREGAR ALUMNO-->
+
+   <!--FIN del MODAL DE AGREGAR ALUMNO-->
+   <!--MODAL DE AGREGAR DOCENTE-->
+   <div class="modal fade"  id="addDocente" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+
+             <!--CABECERA DEL MODAL AGREGAR ALUMNO-->
+             <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                 <h4 class="modal-title">AGREGAR DOCENTE</h4>
+             </div>
+             <!--FIN de la CABECERA DEL MODAL AGREGAR ALUMNO-->
+
+             <!--CUERPO DEL MODAL AGREGAR ALUMNO-->
+             <div class="modal-body">
+
+                 <!--ALERTA DEL MODAL AGREGAR ALUMNO-->
+                 <div class="alert alert-warning" role="alert" style="opacity: 0.5">
+                   <button class="close" data-dismiss="alert"><span>&times;</span></button>
+                   <strong style="color: #6f2600;"><i class="icon fa fa-warning"></i>Asegurate!</strong> de llenar todos los campos
+                 </div>
+                 <!--FIN de ALERTA DEL MODAL AGREGAR ALUMNO-->
+
+                 <!--FORMULARIO DEL MODAL AGREGAR ALUMNO-->
+                 <form action="redirectcategoria" method="post" class="form-horizontal">
+
+
+                     <input type="hidden" name="op" value="add">
+                      <!--GRUPO 1-->
+                     <div class="form-group">
+
+                         <label for="nombreDocente" class="col-sm-2 control-label">DOCENTE:</label>
+                         <div class="col-sm-4">
+                             <input name="nombreDocente" type="text" autocomplete="off" class="form-control"  placeholder="Nombre del docente...">
+                         </div>
+                         <label for="apellidoDocente" class="col-sm-2 control-label">APELLIDOS: </label>
+                         <div class="col-sm-4">
+                             <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Apellidos del docente...">
+                         </div>
+
+                     </div>
+                     <!--FIN del GRUPO 1-->
+                     <!--GRUPO 1-->
+                     <div class="form-group">
+
+                         <label for="generoDocente" class="col-sm-2 control-label">GÉNERO: </label>
+                         <div class="col-sm-4">
+                             <select name="categoria" class="form-control">
+                                   <option value="1">Masculino</option>
+                                   <option value="2">Femenino</option>
+                               </select>
+                         </div>
+                         <label for="apellidoAlumno" class="col-sm-2 control-label">FECHA DE NACIMIENTO: </label>
+                         <div class="col-sm-4">
+                             <input name="apellidoAlumno" type="date" autocomplete="off" class="form-control" placeholder="Apellido de alumno...">
+                         </div>
+
+                     </div>
+                     <!--FIN del GRUPO 1-->
+                     <!--GRUPO 1-->
+                     <div class="form-group">
+                         <label for="nombreDocente" class="col-sm-2 control-label">TIPO DE DOCUMENTO:</label>
+                            <select>
+
+                                  <option value="1">DNI</option>
+                                   <option value="2">PASAPORTE</option>
+                                    <option value="3">RUC</option>
+                                    <option value="4">CARNET EXT.</option>
+                         </select>
+
+                        <div class="col-sm-4">
+                             <input name="apellidoAlumno" type="text" autocomplete="off" class="form-control" placeholder="Número del documento">
+                         </div>
+                     </div>
+
+                     <!--GRUPO 1-->
+                     <div class="form-group">
+
+                         <label for="nombreAlumno" class="col-sm-2 control-label">DIRECCIÓN:</label>
+                         <div class="col-sm-4">
+                             <input name="nombreAlumno" type="text" autocomplete="off" class="form-control"  placeholder="Dirección del docente...">
+                         </div>
+                         <label for="nombreAlumno" class="col-sm-2 control-label">TURNO: </label>
+                         <div class="col-sm-4">
+                             <select name="categoria" class="form-control">
+                                   <option value="1">MAÑANA</option>
+                                   <option value="1">TARDE</option>
+                              </select>
+                         </div>
+                     </div>
+
+
+                    <div class="form-group">
+
+                         <label for="generoDocente" class="col-sm-2 control-label">CODIGO MODULAR: </label>
+                         <div class="col-sm-4">
+                             <input name="nombreAlumno" type="text" autocomplete="off" class="form-control"  placeholder="Código modular...">
+                         </div>
+                         <label for="apellidoAlumno" class="col-sm-2 control-label">CODIGO DE PLAZA </label>
+                        <div class="col-sm-4">
+                             <input name="nombreAlumno" type="text" autocomplete="off" class="form-control"  placeholder="Código de plaza...">
+                         </div>
+
+                     </div>
+
+                     <div class="form-group">
+
+                         <label for="nombreDocente" class="col-sm-2 control-label">TITULO:</label>
+                         <div class="col-sm-4">
+                             <input name="nombreDocente" type="text" autocomplete="off" class="form-control"  placeholder="Título...">
+                         </div>
+                         <label for="apellidoDocente" class="col-sm-2 control-label">ESPECIALIDAD: </label>
+                         <div class="col-sm-4">
+                             <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Especialidad...">
+                         </div>
+
+                     </div>
+
+                     <div class="form-group">
+
+                         <label for="nombreDocente" class="col-sm-2 control-label">ESCALA:</label>
+                         <div class="col-sm-4">
+                             <input name="nombreDocente" type="text" autocomplete="off" class="form-control"  placeholder="Número de escala...">
+                         </div>
+                         <label for="apellidoDocente" class="col-sm-2 control-label">CONDICIÓN LABORAL: </label>
+                         <div class="col-sm-4">
+                             <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Condición laboral...">
+                         </div>
+
+                     </div>
+
+                     <div class="form-group">
+
+                         <label for="nombreDocente" class="col-sm-2 control-label">TIEMPO DE SERVICIOS:</label>
+                         <div class="col-sm-4">
+                             <input name="nombreDocente" type="text" autocomplete="off" class="form-control"  placeholder="Número deltiempo de servicio...">
+                         </div>
+                         <label for="apellidoDocente" class="col-sm-2 control-label">CARGO: </label>
+                         <div class="col-sm-4">
+                             <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Nombre del cargo...">
+                         </div>
+
+                     </div>
+                     <div class="form-group">
+                         <label for="nombreAlumno" class="col-sm-2 control-label">TIPO DE DOCENTE:</label>
+                        <div class="col-sm-4">
+                             <select name="categoria" class="form-control">
+                                   <option value="1">Contratado</option>
+                                   <option value="1">Nombrado</option>
+                              </select>
+                         </div>
+
+                         <label for="nombreAlumno" class="col-sm-2 control-label">TELÉFONO:</label>
+                         <div class="col-sm-4">
+                             <input name="nombreAlumno" type="text" autocomplete="off" class="form-control"  placeholder="Númer de teléfono...">
+                         </div>
+                     </div>
+                     <!--FIN del GRUPO 1-->
+
+                     <!--FOOTER O PIE DE PAGINA DEL MODAL AGREGAR ALUMNO-->
+                     <div class="modal-footer">
+
+                          <button type="submit" class="btn btn-success"  ><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
+                          <a class="btn btn-info">Limpiar</a>
+                          <a  class="btn btn-danger" data-dismiss="modal">Cerrar</a>
+
+                     </div>
+                     <!--FIN del FOOTER O PIE DE PAGINA DEL MODAL AGREGAR ALUMNO-->
+                 </form>
+                 <!--FIN del FORMULARIO DEL MODAL AGREGAR ALUMNO-->
+
+             </div>
+             <!--FIN del CUERPO DEL MODAL AGREGAR ALUMNO-->
+
+          </div>
+      </div>
+   </div>
+   <!--FIN del MODAL DE AGREGAR DOCENTE-->
+
+  <!-- Bootstrap 3.3.6 -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="js/app.min.js"></script>
+</div>
+<!-- ./wrapper -->
+
+
+</body>
+</html>
+
+
+
+
