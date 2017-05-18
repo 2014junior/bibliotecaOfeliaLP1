@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Biblioteca | Reg. Alumno</title>
+    <title>Biblioteca | Reg. PRESTAMO</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
@@ -255,35 +255,31 @@
                   <th><center>Fecha de prestamo</center></th>
                   <th><center>Forma de prestamo</center></th>
                   <th><center>Tiempo de prestamo</center></th>
+                  <th><center>Fecha devolucion</center></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                  <td>1</td>
-                 <td>romeo y julieta</td>
-                 <td><select>
-                     <option value="1">Nombre</option>
-                     <option value="2">Lugar de Procedencia
-
-                     </option>
-
-                 </select>
-                 <select>
-                         <option value="1">Nombre</option>
-                         <option value="2">Ubigeo</option>
+                 <td>Estudiante</td>
+                 <td>Junior Gadea
                      </select></td>
-                 <td>2015</td>
-                 <td>213</td>
-                 <td>5</td>
-                 <td>s/ 35.00</td>
+                 <td>Los perros hambrientos</td>
+                 <td>21/03/2017</td>
+                 <td>Presencial</td>
+                 <td>3 dias</td>
+                 <td>24/03/2017</td>
                 </tr>
                 <tr>
-                 <td>2</td>
-                 <td>Los perros Hambrientos</td>
-                 <td>2014</td>
-                 <td>300</td>
-                 <td>6</td>
-                 <td>s/ 20.00</td>
+                <td>2</td>
+                 <td>Docente</td>
+                 <td>Jorge Gonzales
+                     </select></td>
+                 <td>Romeo y Julieta</td>
+                 <td>15/05/2017</td>
+                 <td>Online</td>
+                 <td>2 dias</td>
+                 <td>17/05/2017</td>
                 </tr>
 
 
@@ -313,65 +309,80 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
 
-                    <!--CABECERA DEL MODAL AGREGAR ALUMNO-->
+                    <!--CABECERA DEL MODAL AGREGAR PRESTAMO-->
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         <h4 class="modal-title">AGREGAR PRESTAMO</h4>
                     </div>
-                    <!--FIN de la CABECERA DEL MODAL AGREGAR ALUMNO-->
+                    <!--FIN de la CABECERA DEL MODAL AGREGAR PRESTAMO-->
 
-                    <!--CUERPO DEL MODAL AGREGAR ALUMNO-->
+                    <!--CUERPO DEL MODAL AGREGAR PRESTAMO-->
                     <div class="modal-body">
 
-                        <!--ALERTA DEL MODAL AGREGAR ALUMNO-->
-                        <div class="alert alert-warning" role="alert" style="opacity: 0.5">
+                        <!--ALERTA DEL MODAL AGREGAR PRESTAMO-->
+                        <div class="alert alert-warning" role="alert" style="opacity: 0.7">
                             <button class="close" data-dismiss="alert"><span>&times;</span></button>
-                            <strong style="color: #6f2600;"><i class="icon fa fa-warning"></i>Asegurate!</strong> de llenar todos los campos
+                            <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i></strong> Asegurate de llenar todos los campos!
                         </div>
-                        <!--FIN de ALERTA DEL MODAL AGREGAR ALUMNO-->
+                        <!--FIN de ALERTA DEL MODAL AGREGAR PRESTAMO-->
 
-                        <!--FORMULARIO DEL MODAL AGREGAR ALUMNO-->
-                        <form action="redirectcategoria" method="post" class="form-horizontal">
-
-
+                        <!--FORMULARIO DEL MODAL AGREGAR PRESTAMO-->
+                       <form action="redirectcategoria" method="post" class="form-horizontal">
                             <input type="hidden" name="op" value="add">
-                            <!--GRUPO 1-->
-                            <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <!--GRUPO 1-->
+                                    <div class="form-group col-md-12">
+                                       <div class="form-group">
+                                              <label for="nombreAlumno" class="col-sm-2 control-label">Tipo Persona: </label>
+                                                 <div class="col-sm-4">
+                                                 <select name="categoria" class="form-control">
+                                                   <option value="1">Docente</option>
+                                                   <option value="2">Estudiante</option>
+                                                   <option value="3">Externo</option>
+                                                </select>
+                         </div>
+                                            <label for="nombreLibro" class="col-md-2 control-label">Persona:</label>
+                                            <div class="col-md-4">
+                                                <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Buscar persona...">
+                                            </div>
+                                       </div>
+                                       <div class="form-group">
+                                            <label for="nombreLibro" class="col-md-2 control-label">Libro:</label>
+                                            <div class="col-md-4">
+                                                <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Buscar libro...">
+                                            </div>
+                                            <label for="año" class="col-md-2 control-label">Fecha Prestamo:</label>
+                                            <div class="col-md-4">
+                                                <input name="año" type="date" autocomplete="off" class="form-control" placeholder="">
+                                            </div>
 
-                                <label for="nombreLibro" class="col-sm-2 control-label">Tipo de persona:</label>
-                                <div class="col-sm-4">
-                                    <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Titulo del Libro...">
-                                </div>
-                                <label for="apellidoAlumno" class="col-sm-2 control-label">Forma de prestamo</label>
-                                <select>
-                                    <li>
-                                        <ul>
-                                            <li><option value="nombre">nombre</option></li>
-                                            <li><option value="ubigeo">ubigeo</option></li>
-                                        </ul>
-                                    </li>
-                                </select>
-                                <div class="col-sm-4">
-                                    <input name="apellidoAlumno" type="date" autocomplete="off" class="form-control" placeholder="Año de Publicación...">
-                                </div>
-                                </div>
+                                       </div>
+                                        <div class="form-group">
+                                             <label for="nombreAlumno" class="col-sm-2 control-label">Forma Prestamo: </label>
+                                                 <div class="col-sm-4">
+                                                 <select name="categoria" class="form-control">
+                                                   <option value="1">Online</option>
+                                                   <option value="2">Presencial</option>
+                                                </select>
+                                                </div>
+                                            <label for="año" class="col-md-2 control-label">Tiempo Prestamo (dias):</label>
+                                            <div class="col-md-4">
+                                                <input name="año" type="number" autocomplete="off" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                             <label for="año" class="col-md-2 control-label">Fecha Devolucion:</label>
+                                            <div class="col-md-4">
+                                                <input name="año" type="date" autocomplete="off" class="form-control" placeholder="">
+                                            </div>
+                                     </div>
+                                     <div class="form-group col-md-4">
+
+                                     </div>
                             <!--FIN del GRUPO 1-->
 
-                            <!--GRUPO 2-->
-                            <div class="form-group">
-
-                                <label for="nombreAlumno" class="col-sm-2 control-label">Cant. Páginas:</label>
-                                <div class="col-sm-4">
-                                    <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Cant. Páginas...">
-                                </div>
-                                <label for="nombreAlumno" class="col-sm-2 control-label">Cantidad: </label>
-                                <div class="col-sm-4">
-                                    <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Cantidad de Libros...">
-                                </div>
-                            </div>
-                            <!--FIN del GRUPO 2-->
-
-                            <!--FOOTER O PIE DE PAGINA DEL MODAL AGREGAR ALUMNO-->
+                            <!--FOOTER O PIE DE PAGINA DEL MODAL AGREGAR PRESTAMO-->
                             <div class="modal-footer">
 
                                 <button type="submit" class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
@@ -379,17 +390,17 @@
                                 <a class="btn btn-danger" data-dismiss="modal">Cerrar</a>
 
                             </div>
-                            <!--FIN del FOOTER O PIE DE PAGINA DEL MODAL AGREGAR ALUMNO-->
+                            <!--FIN del FOOTER O PIE DE PAGINA DEL MODAL AGREGAR PRESTAMO-->
                         </form>
-                        <!--FIN del FORMULARIO DEL MODAL AGREGAR ALUMNO-->
+                        <!--FIN del FORMULARIO DEL MODAL AGREGAR PRESTAMO-->
 
                     </div>
-                    <!--FIN del CUERPO DEL MODAL AGREGAR ALUMNO-->
+                    <!--FIN del CUERPO DEL MODAL AGREGAR PRESTAMO-->
 
                 </div>
             </div>
         </div>
-        <!--FIN del MODAL DE AGREGAR ALUMNO-->
+        <!--FIN del MODAL DE AGREGAR PRESTAMO-->
         <!-- Bootstrap 3.3.6 -->
         <script src="js/bootstrap.min.js"></script>
         <!-- AdminLTE App -->
