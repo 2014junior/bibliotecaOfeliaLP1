@@ -248,35 +248,31 @@
                   <th><center>Fecha de prestamo</center></th>
                   <th><center>Forma de prestamo</center></th>
                   <th><center>Tiempo de prestamo</center></th>
+                  <th><center>Fecha devolucion</center></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                  <td>1</td>
-                 <td>romeo y julieta</td>
-                 <td><select>
-                     <option value="1">Nombre</option>
-                     <option value="2">Lugar de Procedencia
-
-                     </option>
-
-                 </select>
-                 <select>
-                         <option value="1">Nombre</option>
-                         <option value="2">Ubigeo</option>
+                 <td>Estudiante</td>
+                 <td>Junior Gadea
                      </select></td>
-                 <td>2015</td>
-                 <td>213</td>
-                 <td>5</td>
-                 <td>s/ 35.00</td>
+                 <td>Los perros hambrientos</td>
+                 <td>21/03/2017</td>
+                 <td>Presencial</td>
+                 <td>3 dias</td>
+                 <td>24/03/2017</td>
                 </tr>
                 <tr>
-                 <td>2</td>
-                 <td>Los perros Hambrientos</td>
-                 <td>2014</td>
-                 <td>300</td>
-                 <td>6</td>
-                 <td>s/ 20.00</td>
+                <td>2</td>
+                 <td>Docente</td>
+                 <td>Jorge Gonzales
+                     </select></td>
+                 <td>Romeo y Julieta</td>
+                 <td>15/05/2017</td>
+                 <td>Online</td>
+                 <td>2 dias</td>
+                 <td>17/05/2017</td>
                 </tr>
 
 
@@ -324,45 +320,43 @@
                         <!--FIN de ALERTA DEL MODAL AGREGAR ALUMNO-->
 
                         <!--FORMULARIO DEL MODAL AGREGAR ALUMNO-->
-                        <form action="redirectcategoria" method="post" class="form-horizontal">
-
-
+                       <form action="redirectcategoria" method="post" class="form-horizontal">
                             <input type="hidden" name="op" value="add">
-                            <!--GRUPO 1-->
-                            <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <!--GRUPO 1-->
+                                    <div class="form-group col-md-12">
+                                       <div class="form-group">
+                                           <label for="nombreLibro" class="col-md-2 control-label">Persona:</label>
+                                            <div class="col-md-4">
+                                                <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Buscar persona...">
+                                            </div>
+                                            <label for="nombreLibro" class="col-md-2 control-label">Persona:</label>
+                                            <div class="col-md-4">
+                                                <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Buscar persona...">
+                                            </div>
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="año" class="col-md-2 control-label">Año:</label>
+                                            <div class="col-md-2">
+                                                <input name="año" type="number" autocomplete="off" class="form-control" placeholder="" title="Añode publicación">
+                                            </div>
 
-                                <label for="nombreLibro" class="col-sm-2 control-label">Tipo de persona:</label>
-                                <div class="col-sm-4">
-                                    <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Titulo del Libro...">
-                                </div>
-                                <label for="apellidoAlumno" class="col-sm-2 control-label">Forma de prestamo</label>
-                                <select>
-                                    <li>
-                                        <ul>
-                                            <li><option value="nombre">nombre</option></li>
-                                            <li><option value="ubigeo">ubigeo</option></li>
-                                        </ul>
-                                    </li>
-                                </select>
-                                <div class="col-sm-4">
-                                    <input name="apellidoAlumno" type="date" autocomplete="off" class="form-control" placeholder="Año de Publicación...">
-                                </div>
-                                </div>
+                                            <label for="año" class="col-md-2 control-label">Páginas:</label>
+                                            <div class="col-md-2">
+                                                <input name="año" type="number" autocomplete="off" class="form-control" placeholder="">
+                                            </div>
+
+                                            <label for="año" class="col-md-2 control-label">Ejemplares:</label>
+                                            <div class="col-md-2">
+                                                <input name="año" type="number" autocomplete="off" class="form-control" placeholder="">
+                                            </div>
+                                       </div>
+                                     </div>
+                                     <div class="form-group col-md-4">
+
+                                     </div>
                             <!--FIN del GRUPO 1-->
-
-                            <!--GRUPO 2-->
-                            <div class="form-group">
-
-                                <label for="nombreAlumno" class="col-sm-2 control-label">Cant. Páginas:</label>
-                                <div class="col-sm-4">
-                                    <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Cant. Páginas...">
-                                </div>
-                                <label for="nombreAlumno" class="col-sm-2 control-label">Cantidad: </label>
-                                <div class="col-sm-4">
-                                    <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Cantidad de Libros...">
-                                </div>
-                            </div>
-                            <!--FIN del GRUPO 2-->
 
                             <!--FOOTER O PIE DE PAGINA DEL MODAL AGREGAR ALUMNO-->
                             <div class="modal-footer">
