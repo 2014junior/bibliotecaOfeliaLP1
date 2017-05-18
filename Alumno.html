@@ -389,15 +389,12 @@
                          <div class="col-sm-4">
                              <input name="nombreAlumno" type="text" autocomplete="off" class="form-control"  placeholder="DNI del alumno...">
                          </div>
-                         <label for="nombreAlumno" class="col-sm-2 control-label">SECCIÓN: </label>
+
+                         <label for="nombreAlumno" class="col-sm-2 control-label">NIVEL: </label>
                          <div class="col-sm-4">
-                             <select name="categoria" class="form-control">
-                                   <option value="1">A</option>
-                                   <option value="1">B</option>
-                                   <option value="1">C</option>
-                                   <option value="1">D</option>
-                                   <option value="1">E</option>
-                                   <option value="1">F</option>
+                             <select name="categoria" class="form-control" onchange="if(this.options[1].selected) secundaria()">
+                                   <option value="1">Primaria</option>
+                                   <option value="2">Secundaria</option>
                               </select>
                          </div>
                      </div>
@@ -409,15 +406,10 @@
                              <input name="nombreAlumno" type="text" autocomplete="off" class="form-control"  placeholder="Nombre del alumno...">
                          </div>-->
 
-                         <label for="nombreAlumno" class="col-sm-2 control-label">NIVEL: </label>
-                         <div class="col-sm-4">
-                             <select name="categoria" class="form-control" onchange="if(this.options[1].selected) secundaria()">
-                                   <option value="1">Primaria</option>
-                                   <option value="2">Secundaria</option>
-                              </select>
-                         </div>
 
-                          <label for="gradoAlumno" class="col-sm-2 control-label">GRADO: </label>
+                     <div>
+
+                           <label for="gradoAlumno" class="col-sm-2 control-label">GRADO: </label>
                            <div class="col-sm-4">
                              <select name="categoria" class="form-control">
                                    <option value="1">1°</option>
@@ -429,6 +421,19 @@
                               </select>
                          </div>
 
+                     </div>
+
+                      <label for="nombreAlumno" class="col-sm-2 control-label">SECCIÓN: </label>
+                         <div class="col-sm-4">
+                             <select name="categoria" class="form-control">
+                                   <option value="1">A</option>
+                                   <option value="1">B</option>
+                                   <option value="1">C</option>
+                                   <option value="1">D</option>
+                                   <option value="1">E</option>
+                                   <option value="1">F</option>
+                              </select>
+                         </div>
                      </div>
                      <!--GRUPO 1-->
                      <div class="form-group">
