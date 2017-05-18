@@ -201,15 +201,21 @@
                         <ul class="treeview-menu">
                             <li><a href="Docente.html"><i class="fa fa-circle-o"></i>Docente</a></li>
                         </ul>
-
-
-
-          <a href="Prestamo.html">
-            <i class="glyphicon glyphicon-book"></i>
-            <span> Prestamo</span>
+                    </li>
+                     <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-edit"></i>
+            <span>Reportes</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
           </a>
+          <ul class="treeview-menu">
+            <li><a href="Libro_rep.html"><i class="fa fa-circle-o"></i>Libro</a></li>
+          </ul>
+
         </li>
-                           </ul>
+                </ul>
             </section>
             <!-- /.sidebar -->
         </aside>
@@ -217,31 +223,32 @@
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-            <section class="content-header">
+         <!--   <section class="content-header">
                 <h1>
-                    MODÚLO PRESTAMO
-                    <small>Registrar los prestamos de libros</small>
+                    MODÚLO PERSONA
+                    <small>Registrar a personas</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="inicio.html"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
-                    <li class="active">Registrar prestamo</li>
+                    <li class="active">Registar Libros</li>
                 </ol>
-            </section>
+            </section>-->
 
             <!-- Main content -->
             <section class="content">
-                <div class="row">
+               <!-- <div class="row">
                     <div class="col-md-12">
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#addAlumno"><i class="ion-person-add"></i> Registrar prestamo</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#addAlumno"><i class="ion-person-add"></i> Registrar Libro</button>
+
                         <br><br>
                     </div>
-                </div>
+                </div>-->
     <section class="content">
       <div class="row">
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">REGISTRO DE PRESTAMOS</h3>
+              <h3 class="box-title">REPORTES DE LIBROS</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -249,38 +256,67 @@
                 <thead>
                 <tr>
                   <th><center>#</center></th>
-                  <th><center>Tipo persona</center></th>
-                  <th><center>Persona</center></th>
-                  <th><center>Libro</center></th>
-                  <th><center>Fecha de prestamo</center></th>
-                  <th><center>Forma de prestamo</center></th>
-                  <th><center>Tiempo de prestamo</center></th>
-                  <th><center>Fecha devolucion</center></th>
+                   <th><center>Alumno</center></th>
+                  <th><center>Fecha Pres</center></th>
+                  <th><center>editorial</center></th>
+                  <th><center>Usuario</center></th>
+                  <th><center>cantidad</center></th>
+                  <th><center>Fecha Devolucion</center></th>
+
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
+                <!--<tr>
                  <td>1</td>
-                 <td>Estudiante</td>
-                 <td>Junior Gadea
-                     </select></td>
-                 <td>Los perros hambrientos</td>
-                 <td>21/03/2017</td>
-                 <td>Presencial</td>
-                 <td>3 dias</td>
-                 <td>24/03/2017</td>
-                </tr>
+                 <td>romeo y julieta</td>
+                         <td><select>
+                             <option value="1">Nombre</option>
+                             <option value="2">Lugar de Procedencia
+
+                             </option>
+
+                         </select>
+                             <select>
+                                     <option value="1">Nombre</option>
+                                     <option value="2">Ubigeo</option>
+                                 </select></td>
+                                   <td>Navarrete</td>
+                 <td>2015</td>
+                 <td>213</td>
+                 <td>5</td>
+                 <td>s/ 35.00</td>
+                </tr>-->
                 <tr>
-                <td>2</td>
-                 <td>Docente</td>
-                 <td>Jorge Gonzales
-                     </select></td>
-                 <td>Romeo y Julieta</td>
-                 <td>15/05/2017</td>
-                 <td>Online</td>
-                 <td>2 dias</td>
-                 <td>17/05/2017</td>
+                <td>1</td>
+                 <td>Junior Gadea</td>
+                 <td>17/02/2017</td>
+                   <td>Navarrete</td>
+                 <td>Aldo Soraluz</td>
+                 <td>3</td>
+                 <td>01/03/2017</td>
+
                 </tr>
+                 <tr>
+                <td>2</td>
+                 <td>Alberto Cruz</td>
+                 <td>04/03/2017</td>
+                   <td>Navarrete</td>
+                 <td>Karoline</td>
+                 <td>2</td>
+                 <td>13/03/2017</td>
+
+                </tr>
+                 <tr>
+                <td>3</td>
+                 <td>Junior Gadea</td>
+                 <td>04/02/2017</td>
+                   <td>Navarrete</td>
+                 <td>Alex Maluquish</td>
+                 <td>1</td>
+                 <td>04/13/2017</td>
+
+                </tr>
+
 
 
                 </tbody>
@@ -312,7 +348,7 @@
                     <!--CABECERA DEL MODAL AGREGAR ALUMNO-->
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">AGREGAR PRESTAMO</h4>
+                        <h4 class="modal-title">AGREGAR LIBRO</h4>
                     </div>
                     <!--FIN de la CABECERA DEL MODAL AGREGAR ALUMNO-->
 
@@ -327,44 +363,48 @@
                         <!--FIN de ALERTA DEL MODAL AGREGAR ALUMNO-->
 
                         <!--FORMULARIO DEL MODAL AGREGAR ALUMNO-->
-                       <form action="redirectcategoria" method="post" class="form-horizontal">
+                        <form action="redirectcategoria" method="post" class="form-horizontal">
+
+
                             <input type="hidden" name="op" value="add">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!--GRUPO 1-->
-                                    <div class="form-group col-md-12">
-                                       <div class="form-group">
-                                           <label for="nombreLibro" class="col-md-2 control-label">Tipo Persona:</label>
-                                            <div class="col-md-4">
-                                                <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Buscar persona...">
-                                            </div>
-                                            <label for="nombreLibro" class="col-md-2 control-label">Persona:</label>
-                                            <div class="col-md-4">
-                                                <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Buscar persona...">
-                                            </div>
-                                       </div>
-                                       <div class="form-group">
-                                           <label for="año" class="col-md-2 control-label">Libro:</label>
-                                            <div class="col-md-4">
-                                                <input name="año" type="text" autocomplete="off" class="form-control" placeholder="" title="Añode publicación">
-                                            </div>
+                            <!--GRUPO 1-->
+                            <div class="form-group">
 
-                                            <label for="año" class="col-md-2 control-label">Fecha Prestamo:</label>
-                                            <div class="col-md-4">
-                                                <input name="año" type="date" autocomplete="off" class="form-control" placeholder="">
-                                            </div>
-                                       </div>
-                                        <div class="form-group">
-                                            <label for="año" class="col-md-2 control-label">Tiempo Prestamo (dias):</label>
-                                            <div class="col-md-4">
-                                                <input name="año" type="number" autocomplete="off" class="form-control" placeholder="">
-                                            </div>
-                                        </div>
-                                     </div>
-                                     <div class="form-group col-md-4">
+                                <label for="nombreLibro" class="col-sm-2 control-label">TITULO:</label>
+                                <div class="col-sm-4">
+                                    <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Titulo del Libro...">
+                                </div>
+                                <label for="apellidoAlumno" class="col-sm-2 control-label">Año de Publicación: </label>
+                                <select>
+                                    <li>
+                                        <option value="proce">procedencia</option>
+                                        <ul>
+                                            <li><option value="nombre">nombre</option></li>
+                                            <li><option value="ubigeo">ubigeo</option></li>
+                                        </ul>
 
-                                     </div>
+                                        <option value="nomb">nombre</option>
+                                    </li>
+                                </select>
+                                <div class="col-sm-4">
+                                    <input name="apellidoAlumno" type="date" autocomplete="off" class="form-control" placeholder="Año de Publicación...">
+                                </div>
+                                </div>
                             <!--FIN del GRUPO 1-->
+
+                            <!--GRUPO 2-->
+                            <div class="form-group">
+
+                                <label for="nombreAlumno" class="col-sm-2 control-label">Cant. Páginas:</label>
+                                <div class="col-sm-4">
+                                    <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Cant. Páginas...">
+                                </div>
+                                <label for="nombreAlumno" class="col-sm-2 control-label">Cantidad: </label>
+                                <div class="col-sm-4">
+                                    <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Cantidad de Libros...">
+                                </div>
+                            </div>
+                            <!--FIN del GRUPO 2-->
 
                             <!--FOOTER O PIE DE PAGINA DEL MODAL AGREGAR ALUMNO-->
                             <div class="modal-footer">
@@ -385,6 +425,7 @@
             </div>
         </div>
         <!--FIN del MODAL DE AGREGAR ALUMNO-->
+
         <!-- Bootstrap 3.3.6 -->
         <script src="js/bootstrap.min.js"></script>
         <!-- AdminLTE App -->
