@@ -201,13 +201,13 @@
                         <ul class="treeview-menu">
                             <li><a href="Docente.html"><i class="fa fa-circle-o"></i>Docente</a></li>
                         </ul>
-                         <a href="Prestamo.html">
-            <i class="glyphicon glyphicon-book"></i>
-            <span>Prestamo</span>
-            <span class="pull-right-container">
+                        <a href="Prestamo.html">
+                            <i class="glyphicon glyphicon-book"></i>
+                            <span>Prestamo</span>
+                            <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
-          </a>
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -245,130 +245,340 @@
                 <section class="content">
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="box">
-                                <div class="box-header">
+                            <div class="box collapsed-box">
+                                <div class="box-header with-border">
                                     <h3 class="box-title">REGISTRO DE LIBROS</h3>
+                                    <div class="box-tools pull-right">
+                                    </div>
                                 </div>
-                                <label>Mostrar <select name="tablaAlumnos_length" aria-controls="tablaAlumnos" class="btn btn-default">
-                                <option value="10">10</option>
-                                <option value="25">25</option>
-                                <option value="50">50</option>
-                                <option value="100">100</option>
-                                </select> registros</label>
-                                <!-- /.box-header -->
-                                <div class="box-body">
-                                    <table id="example2" class="table table-bordered table-hover">
-                                        <thead>
-                                            <tr role="row" class="odd">
-                                                <th>
-                                                    <center>#</center>
-                                                </th>
-                                                <th>
-                                                    <center>Fecha</center>
-                                                </th>
-                                                <th>
-                                                    <center>Titulo</center>
-                                                </th>
-                                                <th>
-                                                    <center>Autor</center>
-                                                </th>
-                                                <th>
-                                                    <center>N° Serie</center>
-                                                </th>
-                                                <th>
-                                                    <center>Edición</center>
-                                                </th>
-                                                <th>
-                                                    <center>Editorial</center>
-                                                </th>
-                                                <th>
-                                                    <center>Proveedor</center>
-                                                </th>
-                                                <th>
-                                                    <center>Ejemplar</center>
-                                                </th>
+                                <div class="">
+                                    <div class="container-fluid">
+                                        <div class="col-lg-12">
+                                            <div class="table-responsive">
+                                                <table id="tablaAlumnos" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                                                    <thead>
+                                                        <tr role="row">
+                                                            <th>#</th>
+                                                            <th>Fecha</th>
+                                                            <th>Titulo</th>
+                                                            <th>Autor</th>
+                                                            <th>
+                                                                <center>N°</center> Serie</th>
+                                                            <th>Edición</th>
+                                                            <th>Editorial</th>
+                                                            <th>Proveedor</th>
+                                                            <th>Ejemplar</th>
+                                                            <th>Estado</th>
+                                                            <th>Año</th>
+                                                            <th>Precio</th>
+                                                            <th>ACCIÓN</th>
+                                                            <th>Observación</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
 
-                                                <th>
-                                                    <center>Estado</center>
-                                                </th>
-                                                <th>
-                                                    <center>Año</center>
-                                                </th>
-                                                <th>
-                                                    <center>Precio</center>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>16/05/2017</td>
-                                                <td>Romeo y Julieta</td>
-                                                <td>William Shakespeare</td>
-                                                <td>12345678</td>
-                                                <td></td>
-                                                <td>Alianza editorial</td>
-                                                <td>Estado Peruano</td>
-                                                <td><center>5</center></td>
-                                                <td class="btn btn-primary">Bueno</td>
-                                                <td>1597</td>
-                                                <td>s/35.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>16/05/2017</td>
-                                                <td>Romeo y Julieta</td>
-                                                <td>William Shakespeare</td>
-                                                <td>12345678</td>
-                                                <td></td>
-                                                <td>Alianza editorial</td>
-                                                <td>Estado Peruano</td>
-                                                <td><center>5</center></td>
-                                                <td class="btn btn-warning">Regular</td>
-                                                <td>1597</td>
-                                                <td>s/35.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>16/05/2017</td>
-                                                <td>Romeo y Julieta</td>
-                                                <td>William Shakespeare</td>
-                                                <td>12345678</td>
-                                                <td></td>
-                                                <td>Alianza editorial</td>
-                                                <td>Estado Peruano</td>
-                                                <td><center>5</center></td>
-                                                <td class="btn btn-danger">Malo</td>
-                                                <td>1597</td>
-                                                <td>s/35.00</td>
-                                            </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>16/05/2017</td>
+                                                            <td>Romeo y Julieta</td>
+                                                            <td>William Shakespeare</td>
+                                                            <td>12345678</td>
+                                                            <td></td>
+                                                            <td>Alianza editorial</td>
+                                                            <td>Estado Peruano</td>
+                                                            <td>
+                                                                <center>5</center>
+                                                            </td>
+                                                            <td class="btn btn-primary">Bueno</td>
+                                                            <td>1597</td>
+                                                            <td>s/35.00</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                                                </center>
+                                                            </td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>16/05/2017</td>
+                                                            <td>Romeo y Julieta</td>
+                                                            <td>William Shakespeare</td>
+                                                            <td>12345678</td>
+                                                            <td></td>
+                                                            <td>Alianza editorial</td>
+                                                            <td>Estado Peruano</td>
+                                                            <td>
+                                                                <center>5</center>
+                                                            </td>
+                                                            <td class="btn btn-warning">Regular</td>
+                                                            <td>1597</td>
+                                                            <td>s/35.00</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                                                </center>
+                                                            </td>
+                                                            <td></td>
 
-                                        </tbody>
-                                    </table>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>16/05/2017</td>
+                                                            <td>Romeo y Julieta</td>
+                                                            <td>William Shakespeare</td>
+                                                            <td>12345678</td>
+                                                            <td></td>
+                                                            <td>Alianza editorial</td>
+                                                            <td>Estado Peruano</td>
+                                                            <td>
+                                                                <center>5</center>
+                                                            </td>
+                                                            <td class="btn btn-danger">Malo</td>
+                                                            <td>1597</td>
+                                                            <td>s/35.00</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                                                </center>
+                                                            </td>
+                                                            <td></td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>16/05/2017</td>
+                                                            <td>Romeo y Julieta</td>
+                                                            <td>William Shakespeare</td>
+                                                            <td>12345678</td>
+                                                            <td></td>
+                                                            <td>Alianza editorial</td>
+                                                            <td>Estado Peruano</td>
+                                                            <td>
+                                                                <center>5</center>
+                                                            </td>
+                                                            <td class="btn btn-primary">Bueno</td>
+                                                            <td>1597</td>
+                                                            <td>s/35.00</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                                                </center>
+                                                            </td>
+                                                            <td></td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>16/05/2017</td>
+                                                            <td>Romeo y Julieta</td>
+                                                            <td>William Shakespeare</td>
+                                                            <td>12345678</td>
+                                                            <td></td>
+                                                            <td>Alianza editorial</td>
+                                                            <td>Estado Peruano</td>
+                                                            <td>
+                                                                <center>5</center>
+                                                            </td>
+                                                            <td class="btn btn-warning">Regular</td>
+                                                            <td>1597</td>
+                                                            <td>s/35.00</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                                                </center>
+                                                            </td>
+                                                            <td></td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>16/05/2017</td>
+                                                            <td>Romeo y Julieta</td>
+                                                            <td>William Shakespeare</td>
+                                                            <td>12345678</td>
+                                                            <td></td>
+                                                            <td>Alianza editorial</td>
+                                                            <td>Estado Peruano</td>
+                                                            <td>
+                                                                <center>5</center>
+                                                            </td>
+                                                            <td class="btn btn-danger">Malo</td>
+                                                            <td>1597</td>
+                                                            <td>s/35.00</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                                                </center>
+                                                            </td>
+                                                            <td></td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>16/05/2017</td>
+                                                            <td>Romeo y Julieta</td>
+                                                            <td>William Shakespeare</td>
+                                                            <td>12345678</td>
+                                                            <td></td>
+                                                            <td>Alianza editorial</td>
+                                                            <td>Estado Peruano</td>
+                                                            <td>
+                                                                <center>5</center>
+                                                            </td>
+                                                            <td class="btn btn-primary">Bueno</td>
+                                                            <td>1597</td>
+                                                            <td>s/35.00</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                                                </center>
+                                                            </td>
+                                                            <td></td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>16/05/2017</td>
+                                                            <td>Romeo y Julieta</td>
+                                                            <td>William Shakespeare</td>
+                                                            <td>12345678</td>
+                                                            <td></td>
+                                                            <td>Alianza editorial</td>
+                                                            <td>Estado Peruano</td>
+                                                            <td>
+                                                                <center>5</center>
+                                                            </td>
+                                                            <td class="btn btn-warning">Regular</td>
+                                                            <td>1597</td>
+                                                            <td>s/35.00</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                                                </center>
+                                                            </td>
+                                                            <td></td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>16/05/2017</td>
+                                                            <td>Romeo y Julieta</td>
+                                                            <td>William Shakespeare</td>
+                                                            <td>12345678</td>
+                                                            <td></td>
+                                                            <td>Alianza editorial</td>
+                                                            <td>Estado Peruano</td>
+                                                            <td>
+                                                                <center>5</center>
+                                                            </td>
+                                                            <td class="btn btn-danger">Malo</td>
+                                                            <td>1597</td>
+                                                            <td>s/35.00</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                                                </center>
+                                                            </td>
+                                                            <td></td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>16/05/2017</td>
+                                                            <td>Romeo y Julieta</td>
+                                                            <td>William Shakespeare</td>
+                                                            <td>12345678</td>
+                                                            <td></td>
+                                                            <td>Alianza editorial</td>
+                                                            <td>Estado Peruano</td>
+                                                            <td>
+                                                                <center>5</center>
+                                                            </td>
+                                                            <td class="btn btn-primary">Bueno</td>
+                                                            <td>1597</td>
+                                                            <td>s/35.00</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                                                </center>
+                                                            </td>
+                                                            <td></td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>16/05/2017</td>
+                                                            <td>Romeo y Julieta</td>
+                                                            <td>William Shakespeare</td>
+                                                            <td>12345678</td>
+                                                            <td></td>
+                                                            <td>Alianza editorial</td>
+                                                            <td>Estado Peruano</td>
+                                                            <td>
+                                                                <center>5</center>
+                                                            </td>
+                                                            <td class="btn btn-warning">Regular</td>
+                                                            <td>1597</td>
+                                                            <td>s/35.00</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                                                </center>
+                                                            </td>
+                                                            <td></td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>16/05/2017</td>
+                                                            <td>Romeo y Julieta</td>
+                                                            <td>William Shakespeare</td>
+                                                            <td>12345678</td>
+                                                            <td></td>
+                                                            <td>Alianza editorial</td>
+                                                            <td>Estado Peruano</td>
+                                                            <td>
+                                                                <center>5</center>
+                                                            </td>
+                                                            <td class="btn btn-danger">Malo</td>
+                                                            <td>1597</td>
+                                                            <td>s/35.00</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                                                </center>
+                                                            </td>
+                                                            <td></td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div class="box-body">
+
+                                    </div>-->
                                 </div>
-                                <!-- /.box-body -->
                             </div>
-                            <!-- /.box -->
                         </div>
-                        <!-- /.col -->
                     </div>
-                    <!-- /.row -->
-
-
-
-
-
-
                 </section>
-
-
-
-
-
             </section>
-            <!-- /.content -->
         </div>
-
 
         <!--MODAL DE AGREGAR ALUMNO-->
         <div class="modal fade" id="addAlumno" tabindex="-1" role="dialog">
@@ -386,9 +596,9 @@
                     <div class="modal-body">
 
                         <!--ALERTA DEL MODAL AGREGAR ALUMNO-->
-                         <div class="alert alert-warning" role="alert" style="opacity: 0.7">
+                        <div class="alert alert-warning" role="alert" style="opacity: 0.7">
                             <button class="close" data-dismiss="alert"><span>&times;</span></button>
-                            <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i></strong> Asegurate de llenar todos los campos!
+                            <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i>Advertencia !</strong> Asegurate de llenar todos los campos!
                         </div>
                         <!--FIN de ALERTA DEL MODAL AGREGAR ALUMNO-->
 
