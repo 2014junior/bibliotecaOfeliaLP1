@@ -196,20 +196,20 @@
                             <li><a href="Libro.html"><i class="fa fa-circle-o"></i>Libro</a></li>
                         </ul>
                         <ul class="treeview-menu">
-                            <li><a href="Alumno.html"><i class="fa fa-circle-o"></i>Alumno</a></li>
-                        </ul>
-                        <ul class="treeview-menu">
                             <li><a href="Docente.html"><i class="fa fa-circle-o"></i>Docente</a></li>
                         </ul>
-
-
-
-          <a href="Prestamo.html">
-            <i class="glyphicon glyphicon-book"></i>
-            <span> Prestamo</span>
-          </a>
-        </li>
-                           </ul>
+                        <ul class="treeview-menu">
+                            <li><a href="Alumno.html"><i class="fa fa-circle-o"></i>Alumno</a></li>
+                        </ul>
+                        <a href="Prestamo.html"><i class="glyphicon glyphicon-book"></i>
+                            <span> Prestamo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="rep_libro.html">
+                            <i class="glyphicon glyphicon-home"></i><span>Reporte</span></a>
+                    </li>
+                </ul>
             </section>
             <!-- /.sidebar -->
         </aside>
@@ -236,64 +236,76 @@
                         <br><br>
                     </div>
                 </div>
-    <section class="content">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">REGISTRO DE PRESTAMOS</h3>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <table id="example2" class="table table-bordered table-hover">
-                <thead>
-                <tr>
-                  <th><center>#</center></th>
-                  <th><center>Tipo persona</center></th>
-                  <th><center>Persona</center></th>
-                  <th><center>Libro</center></th>
-                  <th><center>Fecha de prestamo</center></th>
-                  <th><center>Forma de prestamo</center></th>
-                  <th><center>Tiempo de prestamo</center></th>
-                  <th><center>Fecha devolucion</center></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                 <td>1</td>
-                 <td>Estudiante</td>
-                 <td>Junior Gadea
-                     </select></td>
-                 <td>Los perros hambrientos</td>
-                 <td>21/03/2017</td>
-                 <td>Presencial</td>
-                 <td>3 dias</td>
-                 <td>24/03/2017</td>
-                </tr>
-                <tr>
-                <td>2</td>
-                 <td>Docente</td>
-                 <td>Jorge Gonzales
-                     </select></td>
-                 <td>Romeo y Julieta</td>
-                 <td>15/05/2017</td>
-                 <td>Online</td>
-                 <td>2 dias</td>
-                 <td>17/05/2017</td>
-                </tr>
-
-
-                </tbody>
-             </table>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-        </div>
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
-    </section>
+                <section class="content">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="box">
+                                <div class="box-header">
+                                    <h3 class="box-title">REGISTRO DE PRESTAMOS</h3>
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <table id="example2" class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <center>#</center>
+                                                </th>
+                                                <th>
+                                                    <center>Tipo persona</center>
+                                                </th>
+                                                <th>
+                                                    <center>Persona</center>
+                                                </th>
+                                                <th>
+                                                    <center>Libro</center>
+                                                </th>
+                                                <th>
+                                                    <center>Fecha de prestamo</center>
+                                                </th>
+                                                <th>
+                                                    <center>Forma de prestamo</center>
+                                                </th>
+                                                <th>
+                                                    <center>Tiempo de prestamo</center>
+                                                </th>
+                                                <th>
+                                                    <center>Fecha devolucion</center>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Alumno</td>
+                                                <td>Junior Gadea</td>
+                                                <td>Los perros hambrientos</td>
+                                                <td>21/03/2017</td>
+                                                <td>Presencial</td>
+                                                <td>3 dias</td>
+                                                <td>24/03/2017</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Docente</td>
+                                                <td>Jorge Gonzales</td>
+                                                <td>Romeo y Julieta</td>
+                                                <td>15/05/2017</td>
+                                                <td>Online</td>
+                                                <td>2 dias</td>
+                                                <td>17/05/2017</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </section>
             </section>
             <!-- /.content -->
         </div>
@@ -320,93 +332,94 @@
                     <div class="modal-body">
 
                         <!--ALERTA DEL MODAL AGREGAR PRESTAMO-->
-                        <div class="alert alert-warning" role="alert" style="opacity: 0.7">
+                        <div class="alert alert-warning" role="alert" style="opacity: 1.0">
                             <button class="close" data-dismiss="alert"><span>&times;</span></button>
-                            <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i></strong> Asegurate de llenar todos los campos!
+                            <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i>Advertencia !</strong> Asegurate de llenar todos los campos!
                         </div>
                         <!--FIN de ALERTA DEL MODAL AGREGAR PRESTAMO-->
 
                         <!--FORMULARIO DEL MODAL AGREGAR PRESTAMO-->
-                       <form action="redirectcategoria" method="post" class="form-horizontal">
+                        <form action="redirectcategoria" method="post" class="form-horizontal">
                             <input type="hidden" name="op" value="add">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <!--GRUPO 1-->
                                     <div class="form-group col-md-12">
-                                       <div class="form-group">
-                                              <label for="nombreAlumno" class="col-sm-2 control-label">Tipo Persona: </label>
-                                                 <div class="col-sm-4">
-                                                 <select name="categoria" class="form-control">
+                                        <div class="form-group">
+                                            <label for="nombreAlumno" class="col-sm-2 control-label">Tipo Persona: </label>
+                                            <div class="col-sm-4">
+                                                <select name="categoria" class="form-control">
                                                    <option value="1">Docente</option>
-                                                   <option value="2">Estudiante</option>
+                                                   <option value="2">Alumno</option>
                                                    <option value="3">Externo</option>
                                                 </select>
-                         </div>
+                                            </div>
                                             <label for="nombreLibro" class="col-md-2 control-label">Persona:</label>
                                             <div class="col-md-4">
                                                 <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Buscar persona...">
                                             </div>
-                                       </div>
-                                       <div class="form-group">
+                                        </div>
+                                        <div class="form-group">
                                             <label for="nombreLibro" class="col-md-2 control-label">Libro:</label>
                                             <div class="col-md-4">
                                                 <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Buscar libro...">
                                             </div>
+                                            <label for="nombreAlumno" class="col-sm-2 control-label">Forma Prestamo: </label>
+                                            <div class="col-sm-4">
+                                                <select name="categoria" class="form-control">
+                                                   <option value="1">Presencial</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group">
                                             <label for="año" class="col-md-2 control-label">Fecha Prestamo:</label>
                                             <div class="col-md-4">
                                                 <input name="año" type="date" autocomplete="off" class="form-control" placeholder="">
                                             </div>
-
-                                       </div>
-                                        <div class="form-group">
-                                             <label for="nombreAlumno" class="col-sm-2 control-label">Forma Prestamo: </label>
-                                                 <div class="col-sm-4">
-                                                 <select name="categoria" class="form-control">
-                                                   <option value="1">Online</option>
-                                                   <option value="2">Presencial</option>
-                                                </select>
-                                                </div>
-                                            <label for="año" class="col-md-2 control-label">Tiempo Prestamo (dias):</label>
-                                            <div class="col-md-4">
-                                                <input name="año" type="number" autocomplete="off" class="form-control" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                             <label for="año" class="col-md-2 control-label">Fecha Devolucion:</label>
+                                            <label for="año" class="col-md-2 control-label">Fecha Devolucion:</label>
                                             <div class="col-md-4">
                                                 <input name="año" type="date" autocomplete="off" class="form-control" placeholder="">
                                             </div>
-                                     </div>
-                                     <div class="form-group col-md-4">
 
-                                     </div>
-                            <!--FIN del GRUPO 1-->
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="año" class="col-md-2 control-label">Tiempo Prestamo (dias):</label>
+                                            <div class="col-md-2">
+                                                <input name="año" type="number" autocomplete="off" class="form-control" placeholder="">
+                                            </div>
 
-                            <!--FOOTER O PIE DE PAGINA DEL MODAL AGREGAR PRESTAMO-->
-                            <div class="modal-footer">
+                                        </div>
+                                        <div class="form-group col-md-4">
 
-                                <button type="submit" class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
-                                <a class="btn btn-info">Limpiar</a>
-                                <a class="btn btn-danger" data-dismiss="modal">Cerrar</a>
+                                        </div>
+                                        <!--FIN del GRUPO 1-->
 
-                            </div>
-                            <!--FIN del FOOTER O PIE DE PAGINA DEL MODAL AGREGAR PRESTAMO-->
+                                        <!--FOOTER O PIE DE PAGINA DEL MODAL AGREGAR PRESTAMO-->
+                                        <div class="modal-footer">
+
+                                            <button type="submit" class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
+                                            <a class="btn btn-info">Limpiar</a>
+                                            <a class="btn btn-danger" data-dismiss="modal">Cerrar</a>
+
+                                        </div>
+                                        <!--FIN del FOOTER O PIE DE PAGINA DEL MODAL AGREGAR PRESTAMO-->
                         </form>
                         <!--FIN del FORMULARIO DEL MODAL AGREGAR PRESTAMO-->
 
-                    </div>
-                    <!--FIN del CUERPO DEL MODAL AGREGAR PRESTAMO-->
+                        </div>
+                        <!--FIN del CUERPO DEL MODAL AGREGAR PRESTAMO-->
 
+                        </div>
+                        </div>
+                    </div>
+                    <!--FIN del MODAL DE AGREGAR PRESTAMO-->
+                    <!-- Bootstrap 3.3.6 -->
+                    <script src="js/bootstrap.min.js"></script>
+                    <!-- AdminLTE App -->
+                    <script src="js/app.min.js"></script>
                 </div>
-            </div>
-        </div>
-        <!--FIN del MODAL DE AGREGAR PRESTAMO-->
-        <!-- Bootstrap 3.3.6 -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- AdminLTE App -->
-        <script src="js/app.min.js"></script>
-    </div>
-    <!-- ./wrapper -->
+                <!-- ./wrapper -->
 
 
 </body>
