@@ -240,7 +240,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <button class="btn btn-primary" data-toggle="modal" data-target="#addAlumno">
-                        <i class="ion-person-add"></i> Agregar Docente</button>
+                        <i class="ion-person-add"></i> Registrar docente</button>
 
                         <br><br>
                     </div>
@@ -259,27 +259,29 @@
                                     <div class="container-fluid">
                                         <div class="col-lg-12">
                                             <div class="table-responsive">
-                                                <table id="tablaDocente" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                                                <table id="tablaDocentes" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
                                                     <thead>
                                                         <tr role="row">
-                                                            <th>#</th>
-                                                            <th>NOMBRE</th>
-                                                            <th>APELLIDOS</th>
-                                                            <th>GÉNERO</th>
-                                                            <th>FECHA DE NACIMIENTO</th>
-                                                            <th>TIPO DE DOCUMENTO</th>
-                                                            <th>DIRECCIÓN</th>
-                                                            <th>TURNO</th>
-                                                            <th>CODIGO MODULAR</th>
-                                                            <th>CODIGO DE PLAZA</th>
-                                                            <th>TÍTULO</th>
-                                                            <th>ESPECIALIDAD</th>
-                                                            <th>ESCALA</th>
-                                                            <th>CONDICION LABORAL</th>
-                                                            <th>TIEMPO DE SERVICIOS</th>
-                                                            <th>CARGO</th>
-                                                            <th>TIPO DE DOCENTE</th>
-                                                            <th>TELÉFONO</th>
+                                                            <th><center>#</center></th>
+                                                            <th><center>Nombre</center></th>
+                                                            <th><center>Apellidos</center></th>
+                                                            <th><center>Género</center></th>
+                                                            <th><center>Fecha de nacimiento</center></th>
+                                                            <th><center>Tipo de documento</center></th>
+                                                            <th><center>Dirección</center></th>
+                                                            <th><center>Turno</center></th>
+                                                            <th><center>Código modular</center></th>
+                                                            <th><center>Código de plaza</center></th>
+                                                            <th><center>Título</center></th>
+                                                            <th><center>Especialidad</center></th>
+                                                            <th><center>Escala</center></th>
+                                                            <th><center>Condición laboral</center></th>
+                                                            <th><center>Tiempo de servicios</center></th>
+                                                            <th><center>Cargo</center></th>
+                                                            <th><center>Tipo de docente</center></th>
+                                                            <th><center>Teléfono</center></th>
+                                                            <th><center>Acción</center></th>
+                                                            <th><center>Observación</center></th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -308,31 +310,11 @@
                                                                     <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
                                                                 </center>
                                                             </td>
+                                                            <td></td>
                                                         </tr>
                                                     </tbody>
 
-                                                    <tfoot>
-                                                        <tr>
-                                                            <th rowspan="1" colspan="1">#</th>
-                                                            <th rowspan="1" colspan="1">NOMBRE</th>
-                                                            <th rowspan="1" colspan="1">APELLIDOS</th>
-                                                            <th rowspan="1" colspan="1">GÉNERO</th>
-                                                            <th rowspan="1" colspan="1">FECHA DE NACIMIENTO</th>
-                                                            <th rowspan="1" colspan="1">TIPO DE DOCUMENTO</th>
-                                                            <th rowspan="1" colspan="1">DIRECCIÓN</th>
-                                                            <th rowspan="1" colspan="1">TURNO</th>
-                                                            <th rowspan="1" colspan="1">CODIGO MODULAR</th>
-                                                            <th rowspan="1" colspan="1">CODIGO DE PLAZA</th>
-                                                            <th rowspan="1" colspan="1">TITULO</th>
-                                                            <th rowspan="1" colspan="1">ESPECIALIDAD</th>
-                                                            <th rowspan="1" colspan="1">ESCALA</th>
-                                                            <th rowspan="1" colspan="1">CONDICIÓN LABORAL</th>
-                                                            <th rowspan="1" colspan="1">TIEMPO DE SERVICIOS</th>
-                                                            <th rowspan="1" colspan="1">CARGO</th>
-                                                            <th rowspan="1" colspan="1">TIPO DE DOCENTE</th>
-                                                            <th rowspan="1" colspan="1">TELÉFONO</th>
-                                                        </tr>
-                                                    </tfoot>
+
                                                 </table>
                                             </div>
                                         </div>
@@ -364,7 +346,7 @@
                         <!--ALERTA DEL MODAL AGREGAR DOCENTE-->
                         <div class="alert alert-warning" role="alert" style="opacity: 1.0">
                             <button class="close" data-dismiss="alert"><span>&times;</span></button>
-                            <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i>Advertencia !</strong> Asegurate de llenar todos los campos!
+                            <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i>Advertencia !</strong> Asegurate de llenar todos los campos *!
                         </div>
                         <!--FIN de ALERTA DEL MODAL AGREGAR ALUMNO-->
 
@@ -379,11 +361,11 @@
                                     <div class="form-group col-md-12">
                                         <div class="form-group">
 
-                                            <label for="nombreDocente" class="col-sm-2 control-label">DOCENTE:</label>
+                                            <label for="nombreDocente" class="col-sm-2 control-label">* Nombres:</label>
                                             <div class="col-sm-4">
                                                 <input name="nombreDocente" type="text" autocomplete="off" class="form-control" placeholder="Nombre del docente...">
                                             </div>
-                                            <label for="apellidoDocente" class="col-sm-2 control-label">APELLIDOS: </label>
+                                            <label for="apellidoDocente" class="col-sm-2 control-label">* Apellidos: </label>
                                             <div class="col-sm-4">
                                                 <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Apellidos del docente...">
                                             </div>
@@ -393,14 +375,14 @@
                                         <!--GRUPO 1-->
                                         <div class="form-group">
 
-                                            <label for="generoDocente" class="col-sm-2 control-label">GÉNERO: </label>
-                                            <div class="col-sm-4">
-                                                <select name="categoria" class="form-control">
+                                            <label for="generoDocente" class="col-sm-2 control-label ">* Género: </label>
+                                            <div class="col-sm-4 ">
+                                                <select name="categoria" class="form-control btn btn-default">
                                    <option value="1">Masculino</option>
                                    <option value="2">Femenino</option>
                                </select>
                                             </div>
-                                            <label for="apellidoAlumno" class="col-sm-2 control-label">FECHA DE NACIMIENTO: </label>
+                                            <label for="apellidoAlumno" class="col-sm-2 control-label">* Fecha de nacimiento: </label>
                                             <div class="col-sm-4">
                                                 <input name="apellidoAlumno" type="date" autocomplete="off" class="form-control" placeholder="Apellido de alumno...">
                                             </div>
@@ -410,15 +392,15 @@
                                         <!--GRUPO 1-->
 
                                         <div class="form-group">
-                                            <label for="tipodocumento" class="col-sm-2 control-label">TIPO DE DOCUMENTO:</label>
+                                            <label for="tipodocumento" class="col-sm-2 control-label">* Tipo de documento:</label>
                                             <div class="col-sm-4">
                                                 <select class="btn btn-default">
-                                        <option value="1" class=" btn btn-default">DNI</option>
-                                        <option value="2" class=" btn btn-default">Pasaporte</option>
-                                        <option value="3" class=" btn btn-default">RUC</option>
+                                        <option value="1">DNI</option>
+                                        <option value="2">Pasaporte</option>
+                                        <option value="3">RUC</option>
                                      </select>
                                             </div>
-                                            <label for="número" class="col-sm-2 control-label">Número documento:</label>
+                                            <label for="número" class="col-sm-2 control-label">* Número documento:</label>
                                             <div class="col-sm-4">
                                                 <input name="numerodocumento" type="text" autocomplete="off" class="form-control" placeholder="Número de documento">
                                             </div>
@@ -427,15 +409,15 @@
                                         <!--GRUPO 1-->
                                         <div class="form-group">
 
-                                            <label for="nombreAlumno" class="col-sm-2 control-label">DIRECCIÓN:</label>
+                                            <label for="nombreAlumno" class="col-sm-2 control-label">* Dirección:</label>
                                             <div class="col-sm-4">
                                                 <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Dirección del docente...">
                                             </div>
-                                            <label for="nombreAlumno" class="col-sm-2 control-label">TURNO: </label>
+                                            <label for="nombreAlumno" class="col-sm-2 control-label">* Turno: </label>
                                             <div class="col-sm-4">
                                                 <select class="btn btn-default">
-                                   <option value="1">MAÑANA</option>
-                                   <option value="1">TARDE</option>
+                                   <option value="1">Mañana</option>
+                                   <option value="1">Tarde</option>
                               </select>
                                             </div>
                                         </div>
@@ -443,11 +425,11 @@
 
                                         <div class="form-group">
 
-                                            <label for="generoDocente" class="col-sm-2 control-label">CODIGO MODULAR: </label>
+                                            <label for="generoDocente" class="col-sm-2 control-label">* Código modular: </label>
                                             <div class="col-sm-4">
                                                 <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Código modular...">
                                             </div>
-                                            <label for="apellidoAlumno" class="col-sm-2 control-label">CODIGO DE PLAZA </label>
+                                            <label for="apellidoAlumno" class="col-sm-2 control-label">* Código de plaza </label>
                                             <div class="col-sm-4">
                                                 <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Código de plaza...">
                                             </div>
@@ -456,11 +438,11 @@
 
                                         <div class="form-group">
 
-                                            <label for="nombreDocente" class="col-sm-2 control-label">TITULO:</label>
+                                            <label for="nombreDocente" class="col-sm-2 control-label">* Título:</label>
                                             <div class="col-sm-4">
                                                 <input name="nombreDocente" type="text" autocomplete="off" class="form-control" placeholder="Título...">
                                             </div>
-                                            <label for="apellidoDocente" class="col-sm-2 control-label">ESPECIALIDAD: </label>
+                                            <label for="apellidoDocente" class="col-sm-2 control-label">* Especialidad: </label>
                                             <div class="col-sm-4">
                                                 <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Especialidad...">
                                             </div>
@@ -469,11 +451,11 @@
 
                                         <div class="form-group">
 
-                                            <label for="nombreDocente" class="col-sm-2 control-label">ESCALA:</label>
+                                            <label for="nombreDocente" class="col-sm-2 control-label">* Escala:</label>
                                             <div class="col-sm-4">
                                                 <input name="nombreDocente" type="text" autocomplete="off" class="form-control" placeholder="Número de escala...">
                                             </div>
-                                            <label for="apellidoDocente" class="col-sm-2 control-label">CONDICIÓN LABORAL: </label>
+                                            <label for="apellidoDocente" class="col-sm-2 control-label">* Condición laboral: </label>
                                             <div class="col-sm-4">
                                                 <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Condición laboral...">
                                             </div>
@@ -482,31 +464,36 @@
 
                                         <div class="form-group">
 
-                                            <label for="nombreDocente" class="col-sm-2 control-label">TIEMPO DE SERVICIOS:</label>
+                                            <label for="nombreDocente" class="col-sm-2 control-label">* Tiempo de servicios:</label>
                                             <div class="col-sm-4">
                                                 <input name="nombreDocente" type="text" autocomplete="off" class="form-control" placeholder="Número deltiempo de servicio...">
                                             </div>
-                                            <label for="apellidoDocente" class="col-sm-2 control-label">CARGO: </label>
+                                            <label for="apellidoDocente" class="col-sm-2 control-label">* Cargo: </label>
                                             <div class="col-sm-4">
                                                 <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Nombre del cargo...">
                                             </div>
 
                                         </div>
                                         <div class="form-group">
-                                            <label for="nombreAlumno" class="col-sm-2 control-label">TIPO DE DOCENTE:</label>
+                                            <label for="tipoDocente" class="col-sm-2 control-label">* Tipo de docente:</label>
                                             <div class="col-sm-4">
                                                 <select class="btn btn-default">
-                                   <option value="1">Contratado</option>
-                                   <option value="1">Nombrado</option>
-                              </select>
+                                                       <option value="1">Contratado</option>
+                                                       <option value="1">Nombrado</option>
+                                                </select>
                                             </div>
 
-                                            <label for="nombreAlumno" class="col-sm-2 control-label">TELÉFONO:</label>
+                                            <label for="telefonoDocente" class="col-sm-2 control-label">* Teléfono:</label>
                                             <div class="col-sm-4">
-                                                <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Númer de teléfono...">
+                                                <input name="telefonoDocente" type="text" autocomplete="off" class="form-control" placeholder="Número de teléfono...">
                                             </div>
                                         </div>
-
+                                        <div class="form-group">
+                                           <label for="descripcionDocente" class="col-sm-2 control-label">* Descripción</label>
+                                            <div class="col-sm-10">
+                                                <textarea name="descripcionDocente" rows="5" cols="110" class="form-control" placeholder="Escribe aquí una breve descripción del libro..."></textarea>
+                                            </div>
+                                        </div>
 
 
 
@@ -520,42 +507,43 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
 
-                                <!--FIN del FOOTER O PIE DE PAGINA DEL MODAL AGREGAR ALUMNO-->
+                            <!--FIN del FOOTER O PIE DE PAGINA DEL MODAL AGREGAR ALUMNO-->
                         </form>
                         <!--FIN del FORMULARIO DEL MODAL AGREGAR ALUMNO-->
 
-                        </div>
-                        <!--FIN del CUERPO DEL MODAL AGREGAR ALUMNO-->
-
                     </div>
+                    <!--FIN del CUERPO DEL MODAL AGREGAR ALUMNO-->
+
                 </div>
             </div>
-            <!--FIN del MODAL DE AGREGAR ALUMNO-->
-
-
-            <!-- :::::::::::::::  Fin del contenido ::::::::::::::::::-->
-
-
-            <!-- Aqui empieza el FOOTER  -->
-            <footer class="main-footer">
-                <div class="pull-right hidden-xs">
-                    <b>Version</b> 2.3.8
-                </div>
-                <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
-            </footer>
-            <!-- Aqui termina el FOOTER  -->
-
-
-
-
-            <!-- Bootstrap 3.3.6 -->
-            <script src="js/bootstrap.min.js"></script>
-            <!-- AdminLTE App -->
-            <script src="js/app.min.js"></script>
         </div>
-        <!-- ./wrapper -->
+        <!--FIN del MODAL DE AGREGAR ALUMNO-->
+
+
+        <!-- :::::::::::::::  Fin del contenido ::::::::::::::::::-->
+
+
+        <!-- Aqui empieza el FOOTER  -->
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 2.3.8
+            </div>
+            <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
+        </footer>
+        <!-- Aqui termina el FOOTER  -->
+
+
+
+
+        <!-- Bootstrap 3.3.6 -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="js/app.min.js"></script>
+    </div>
+    <!-- ./wrapper -->
 
 
 </body>
