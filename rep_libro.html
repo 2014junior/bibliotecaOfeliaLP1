@@ -25,7 +25,57 @@
     <script type="text/javascript" language="javascript" src="DataTables/media/js/jquery.dataTables.js"></script>
     <script>
         $(function() {
-            $("#tablaAlumnos").DataTable({
+            $("#tablaLibros").DataTable({
+                "language": {
+                    "sProcessing": "Procesando...",
+                    "sLengthMenu": "Mostrar _MENU_ registros",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Buscar:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    }
+                }
+            });$("#tablaRepLibros").DataTable({
+                "language": {
+                    "sProcessing": "Procesando...",
+                    "sLengthMenu": "Mostrar _MENU_ registros",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Buscar:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    }
+                }
+            });$("#tablaAlumnos").DataTable({
                 "language": {
                     "sProcessing": "Procesando...",
                     "sLengthMenu": "Mostrar _MENU_ registros",
@@ -202,14 +252,15 @@
                             <li><a href="Docente.html"><i class="fa fa-circle-o"></i>Docente</a></li>
                         </ul><a href="Prestamo.html"><i class="glyphicon glyphicon-book"></i>
                             <span>Prestamo</span>
-                            <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-            </span>
+
                         </a>
                     </li>
                     <li>
                         <a href="rep_libro.html">
                             <i class="glyphicon glyphicon-home"></i><span>Reporte</span></a>
+                            <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                            </span>
                     </li>
                 </ul>
             </section>
@@ -225,7 +276,7 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    MODÚLO PERSONA
+                    Módulo reporte
                     <small>Reporte de libros</small>
                 </h1>
                 <ol class="breadcrumb">
@@ -586,7 +637,7 @@
                     <div class="modal-body">
 
                         <!--ALERTA DEL MODAL AGREGAR ALUMNO-->
-                        <div class="alert alert-warning" role="alert" style="opacity: 1.0">
+                        <div class="alert alert-warning" role="alert" style="opacity: 1.5">
                             <button class="close" data-dismiss="alert"><span>&times;</span></button>
                             <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i>Advertencia !</strong> Asegurate de llenar todos los campos!
                         </div>

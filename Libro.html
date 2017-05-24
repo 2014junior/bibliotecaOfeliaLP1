@@ -229,14 +229,16 @@
                         </ul>
                         <a href="Prestamo.html"><i class="glyphicon glyphicon-book"></i>
                             <span>Prestamo</span>
-                            <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                            </span>
+
                         </a>
                     </li>
                     <li>
                         <a href="rep_libro.html">
-                            <i class="glyphicon glyphicon-home"></i><span>Reporte</span></a>
+                            <i class="glyphicon glyphicon-home"></i><span>Reporte</span>
+                            <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -252,8 +254,8 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    MODÚLO PERSONA
-                    <small>Registrar a personas</small>
+                    MODÚLO REGISTRO
+                    <small>Registrar libros</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="inicio.html"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
@@ -285,7 +287,7 @@
                                     <div class="container-fluid">
                                         <div class="col-lg-12">
                                             <div class="table-responsive">
-                                                <table id="tablaLibros" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                                                <table  id="tablaLibros" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
                                                     <thead>
                                                         <tr role="row">
                                                             <th>#</th>
@@ -301,7 +303,7 @@
                                                             <th>Ejemplar</th>
                                                             <th>Estado</th>
                                                             <th>Precio</th>
-                                                            <th>ACCIÓN</th>
+                                                            <th>Acción</th>
                                                             <th>Descripción</th>
                                                         </tr>
                                                     </thead>
@@ -320,12 +322,12 @@
                                                             <td>
                                                                 <center>5</center>
                                                             </td>
-                                                            <td class="btn btn-primary">Bueno</td>
+                                                            <td><span class="badge bg-green">Bueno</span></td>
 
                                                             <td>s/35.00</td>
                                                             <td>
                                                                 <center>
-                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-info btn-xs" href="Libro.html"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
                                                                     <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
                                                                 </center>
                                                             </td>
@@ -344,8 +346,7 @@
                                                             <td>
                                                                 <center>5</center>
                                                             </td>
-                                                            <td class="btn btn-warning">Regular</td>
-
+                                                            <td><span class="badge bg-yellow">Regular</span></td>
                                                             <td>s/35.00</td>
                                                             <td>
                                                                 <center>
@@ -369,8 +370,7 @@
                                                             <td>
                                                                 <center>5</center>
                                                             </td>
-                                                            <td class="btn btn-danger">Malo</td>
-
+                                                            <td><span class="badge bg-red">Malo</span></td>
                                                             <td>s/35.00</td>
                                                             <td>
                                                                 <center>
@@ -382,7 +382,7 @@
 
                                                         </tr>
                                                         <tr>
-                                                            <td>1</td>
+                                                            <td>4</td>
                                                             <td>16/05/2017</td>
                                                             <td>Romeo y Julieta</td>
                                                             <td>William Shakespeare</td>
@@ -394,8 +394,7 @@
                                                             <td>
                                                                 <center>5</center>
                                                             </td>
-                                                            <td class="btn btn-primary">Bueno</td>
-
+                                                            <td><span class="badge bg-green">Bueno</span></td>
                                                             <td>s/35.00</td>
                                                             <td>
                                                                 <center>
@@ -407,7 +406,7 @@
 
                                                         </tr>
                                                         <tr>
-                                                            <td>2</td>
+                                                            <td>5</td>
                                                             <td>16/05/2017</td>
                                                             <td>Romeo y Julieta</td>
                                                             <td>William Shakespeare</td>
@@ -419,7 +418,7 @@
                                                             <td>
                                                                 <center>5</center>
                                                             </td>
-                                                            <td class="btn btn-warning">Regular</td>
+                                                            <td><span class="badge bg-yellow">Regular</span></td>
                                                             <td>s/35.00</td>
                                                             <td>
                                                                 <center>
@@ -431,7 +430,7 @@
 
                                                         </tr>
                                                         <tr>
-                                                            <td>3</td>
+                                                            <td>6</td>
                                                             <td>16/05/2017</td>
                                                             <td>Romeo y Julieta</td>
                                                             <td>William Shakespeare</td>
@@ -443,7 +442,7 @@
                                                             <td>
                                                                 <center>5</center>
                                                             </td>
-                                                            <td class="btn btn-danger">Malo</td>
+                                                            <td><span class="badge bg-red">Malo</span></td>
                                                             <td>s/35.00</td>
                                                             <td>
                                                                 <center>
@@ -455,7 +454,7 @@
 
                                                         </tr>
                                                         <tr>
-                                                            <td>1</td>
+                                                            <td>7</td>
                                                             <td>16/05/2017</td>
                                                             <td>Romeo y Julieta</td>
                                                             <td>William Shakespeare</td>
@@ -467,7 +466,7 @@
                                                             <td>
                                                                 <center>5</center>
                                                             </td>
-                                                            <td class="btn btn-primary">Bueno</td>
+                                                            <td><span class="badge bg-green">Bueno</span></td>
                                                             <td>s/35.00</td>
                                                             <td>
                                                                 <center>
@@ -479,7 +478,7 @@
 
                                                         </tr>
                                                         <tr>
-                                                            <td>2</td>
+                                                            <td>8</td>
                                                             <td>16/05/2017</td>
                                                             <td>Romeo y Julieta</td>
                                                             <td>William Shakespeare</td>
@@ -491,7 +490,7 @@
                                                             <td>
                                                                 <center>5</center>
                                                             </td>
-                                                            <td class="btn btn-warning">Regular</td>
+                                                            <td><span class="badge bg-yellow">Regular</span></td>
                                                             <td>s/35.00</td>
                                                             <td>
                                                                 <center>
@@ -503,7 +502,7 @@
 
                                                         </tr>
                                                         <tr>
-                                                            <td>3</td>
+                                                            <td>9</td>
                                                             <td>16/05/2017</td>
                                                             <td>Romeo y Julieta</td>
                                                             <td>William Shakespeare</td>
@@ -515,7 +514,7 @@
                                                             <td>
                                                                 <center>5</center>
                                                             </td>
-                                                            <td class="btn btn-danger">Malo</td>
+                                                            <td><span class="badge bg-red">Malo</span></td>
                                                             <td>s/35.00</td>
                                                             <td>
                                                                 <center>
@@ -527,7 +526,7 @@
 
                                                         </tr>
                                                         <tr>
-                                                            <td>1</td>
+                                                            <td>10</td>
                                                             <td>16/05/2017</td>
                                                             <td>Romeo y Julieta</td>
                                                             <td>William Shakespeare</td>
@@ -539,7 +538,7 @@
                                                             <td>
                                                                 <center>5</center>
                                                             </td>
-                                                            <td class="btn btn-primary">Bueno</td>
+                                                            <td><span class="badge bg-green">Bueno</span></td>
                                                             <td>s/35.00</td>
                                                             <td>
                                                                 <center>
@@ -551,7 +550,7 @@
 
                                                         </tr>
                                                         <tr>
-                                                            <td>2</td>
+                                                            <td>11</td>
                                                             <td>16/05/2017</td>
                                                             <td>Romeo y Julieta</td>
                                                             <td>William Shakespeare</td>
@@ -563,7 +562,7 @@
                                                             <td>
                                                                 <center>5</center>
                                                             </td>
-                                                            <td class="btn btn-warning">Regular</td>
+                                                            <td><span class="badge bg-yellow">Regular</span></td>
                                                             <td>s/35.00</td>
                                                             <td>
                                                                 <center>
@@ -575,7 +574,7 @@
 
                                                         </tr>
                                                         <tr>
-                                                            <td>3</td>
+                                                            <td>12</td>
                                                             <td>16/05/2017</td>
                                                             <td>Romeo y Julieta</td>
                                                             <td>William Shakespeare</td>
@@ -587,7 +586,7 @@
                                                             <td>
                                                                 <center>5</center>
                                                             </td>
-                                                            <td class="btn btn-danger">Malo</td>
+                                                            <td><span class="badge bg-red">Malo</span></td>
                                                             <td>s/35.00</td>
                                                             <td>
                                                                 <center>
@@ -599,6 +598,25 @@
 
                                                         </tr>
                                                     </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th rowspan="1" colspan="1">#</th>
+                                                            <th rowspan="1" colspan="1">Fecha</th>
+                                                            <th rowspan="1" colspan="1">Titulo</th>
+                                                            <th rowspan="1" colspan="1">Autor</th>
+                                                            <th rowspan="1" colspan="1">
+                                                                <center>N°</center> Serie</th>
+                                                            <th rowspan="1" colspan="1">Edición</th>
+                                                            <th rowspan="1" colspan="1">Año</th>
+                                                            <th rowspan="1" colspan="1">Editorial</th>
+                                                            <th rowspan="1" colspan="1">Proveedor</th>
+                                                            <th rowspan="1" colspan="1">Ejemplar</th>
+                                                            <th rowspan="1" colspan="1">Estado</th>
+                                                            <th rowspan="1" colspan="1">Precio</th>
+                                                            <th rowspan="1" colspan="1">Acción</th>
+                                                            <th rowspan="1" colspan="1">Descripción</th>
+                                                        </tr>
+
                                                 </table>
                                             </div>
                                         </div>
@@ -628,9 +646,8 @@
                     <div class="modal-body">
 
                         <!--ALERTA DEL MODAL AGREGAR ALUMNO-->
-                        <div class="alert alert-warning" role="alert" style="opacity: 1.0">
-                            <button class="close" data-dismiss="alert"><span>&times;</span></button>
-                            <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i>Advertencia !</strong> Asegurate de llenar todos los campos *!
+                        <div class="alert alert-warning" role="alert" style="opacity: 1.5">
+                            <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i>Advertencia: </strong>Asegurate de llenar todos los campos *
                         </div>
                         <!--FIN de ALERTA DEL MODAL AGREGAR ALUMNO-->
 
@@ -646,7 +663,7 @@
                                         <div class="form-group">
                                             <label for="numeroIngreso" class="col-md-2 control-label">* N°ingreso:</label>
                                             <div class="col-md-2">
-                                                <input name="numeroIngreso" type="number" autocomplete="off" class="form-control" placeholder="" title="N° ingreso" >
+                                                <input name="numeroIngreso" type="number" autocomplete="off" class="form-control" placeholder="" title="N° ingreso">
                                             </div>
                                             <label for="fechaRegistro" class="col-md-5 control-label ">* Fecha:</label>
                                             <div class="col-md-3 pull-right">
@@ -722,7 +739,7 @@
 
                                         </div>
                                         <div class="form-group">
-                                           <label for="descripcionLibro" class="col-sm-2 control-label">* Descripción</label>
+                                            <label for="descripcionLibro" class="col-sm-2 control-label">* Descripción</label>
                                             <div class="col-sm-10">
                                                 <textarea name="descripcionLibro" rows="5" cols="110" class="form-control" placeholder="Escribe aquí una breve descripción del libro..."></textarea>
                                             </div>
