@@ -25,88 +25,144 @@
     <script type="text/javascript" language="javascript" src="DataTables/media/js/jquery.dataTables.js"></script>
     <script>
         $(function() {
-            $("#tablaAlumnos").DataTable({
-                "language": {
-                    "sProcessing": "Procesando...",
-                    "sLengthMenu": "Mostrar _MENU_ registros",
-                    "sZeroRecords": "No se encontraron resultados",
-                    "sEmptyTable": "Ningún dato disponible en esta tabla",
-                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                    "sInfoPostFix": "",
-                    "sSearch": "Buscar:",
-                    "sUrl": "",
-                    "sInfoThousands": ",",
-                    "sLoadingRecords": "Cargando...",
-                    "oPaginate": {
-                        "sFirst": "Primero",
-                        "sLast": "Último",
-                        "sNext": "Siguiente",
-                        "sPrevious": "Anterior"
-                    },
-                    "oAria": {
-                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
-                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                    }
-                }
-            });
-            $("#tablaDocentes").DataTable({
-                "language": {
-                    "sProcessing": "Procesando...",
-                    "sLengthMenu": "Mostrar _MENU_ registros",
-                    "sZeroRecords": "No se encontraron resultados",
-                    "sEmptyTable": "Ningún dato disponible en esta tabla",
-                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                    "sInfoPostFix": "",
-                    "sSearch": "Buscar:",
-                    "sUrl": "",
-                    "sInfoThousands": ",",
-                    "sLoadingRecords": "Cargando...",
-                    "oPaginate": {
-                        "sFirst": "Primero",
-                        "sLast": "Último",
-                        "sNext": "Siguiente",
-                        "sPrevious": "Anterior"
-                    },
-                    "oAria": {
-                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
-                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                    }
-                }
-            });
-            $("#tablaBibliotecarios").DataTable({
-                "language": {
-                    "sProcessing": "Procesando...",
-                    "sLengthMenu": "Mostrar _MENU_ registros",
-                    "sZeroRecords": "No se encontraron resultados",
-                    "sEmptyTable": "Ningún dato disponible en esta tabla",
-                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                    "sInfoPostFix": "",
-                    "sSearch": "Buscar:",
-                    "sUrl": "",
-                    "sInfoThousands": ",",
-                    "sLoadingRecords": "Cargando...",
-                    "oPaginate": {
-                        "sFirst": "Primero",
-                        "sLast": "Último",
-                        "sNext": "Siguiente",
-                        "sPrevious": "Anterior"
-                    },
-                    "oAria": {
-                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
-                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                    }
-                }
-            });
+                    $("#tablaLibros").DataTable({
+                        "language": {
+                            "sProcessing": "Procesando...",
+                            "sLengthMenu": "Mostrar _MENU_ registros",
+                            "sZeroRecords": "No se encontraron resultados",
+                            "sEmptyTable": "Ningún dato disponible en esta tabla",
+                            "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                            "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                            "sInfoPostFix": "",
+                            "sSearch": "Buscar:",
+                            "sUrl": "",
+                            "sInfoThousands": ",",
+                            "sLoadingRecords": "Cargando...",
+                            "oPaginate": {
+                                "sFirst": "Primero",
+                                "sLast": "Último",
+                                "sNext": "Siguiente",
+                                "sPrevious": "Anterior"
+                            },
+                            "oAria": {
+                                "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                                "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                            }
+                        }
+                    });
+                    $(function() {
+                        $("#tablaAlumnos").DataTable({
+                            "language": {
+                                "sProcessing": "Procesando...",
+                                "sLengthMenu": "Mostrar _MENU_ registros",
+                                "sZeroRecords": "No se encontraron resultados",
+                                "sEmptyTable": "Ningún dato disponible en esta tabla",
+                                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                                "sInfoPostFix": "",
+                                "sSearch": "Buscar:",
+                                "sUrl": "",
+                                "sInfoThousands": ",",
+                                "sLoadingRecords": "Cargando...",
+                                "oPaginate": {
+                                    "sFirst": "Primero",
+                                    "sLast": "Último",
+                                    "sNext": "Siguiente",
+                                    "sPrevious": "Anterior"
+                                },
+                                "oAria": {
+                                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                                }
+                            }
+                        });
+                        $("#tablaDocentes").DataTable({
+                            "language": {
+                                "sProcessing": "Procesando...",
+                                "sLengthMenu": "Mostrar _MENU_ registros",
+                                "sZeroRecords": "No se encontraron resultados",
+                                "sEmptyTable": "Ningún dato disponible en esta tabla",
+                                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                                "sInfoPostFix": "",
+                                "sSearch": "Buscar:",
+                                "sUrl": "",
+                                "sInfoThousands": ",",
+                                "sLoadingRecords": "Cargando...",
+                                "oPaginate": {
+                                    "sFirst": "Primero",
+                                    "sLast": "Último",
+                                    "sNext": "Siguiente",
+                                    "sPrevious": "Anterior"
+                                },
+                                "oAria": {
+                                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                                }
+                            }
+                        });
+                        $("#tablaBibliotecarios").DataTable({
+                            "language": {
+                                "sProcessing": "Procesando...",
+                                "sLengthMenu": "Mostrar _MENU_ registros",
+                                "sZeroRecords": "No se encontraron resultados",
+                                "sEmptyTable": "Ningún dato disponible en esta tabla",
+                                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                                "sInfoPostFix": "",
+                                "sSearch": "Buscar:",
+                                "sUrl": "",
+                                "sInfoThousands": ",",
+                                "sLoadingRecords": "Cargando...",
+                                "oPaginate": {
+                                    "sFirst": "Primero",
+                                    "sLast": "Último",
+                                    "sNext": "Siguiente",
+                                    "sPrevious": "Anterior"
+                                },
+                                "oAria": {
+                                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                                }
+                            }
+                        });
 
-        });
+                    });
 
     </script>
+    <Script Language="JavaScript">
+        function DameLaFechaHora() {
+            var hora = new Date()
+            var hrs = hora.getHours();
+            var min = hora.getMinutes();
+            var hoy = new Date();
+            var m = new Array();
+            var d = new Array()
+            var an = hoy.getYear();
+            m[0] = "Enero";
+            m[1] = "Febrero";
+            m[2] = "Marzo";
+            m[3] = "Abril";
+            m[4] = "Mayo";
+            m[5] = "Junio";
+            m[6] = "Julio";
+            m[7] = "Agosto";
+            m[8] = "Septiembre";
+            m[9] = "Octubre";
+            m[10] = "Noviembre";
+            m[11] = "Diciembre";
+            document.write(hrs + ":" + min + " (");
+            document.write(hoy.getDate());
+            document.write(" de ");
+            document.write(m[hoy.getMonth()]);
+            document.write(")");
+        }
+
+    </Script>
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -115,12 +171,12 @@
         <header class="main-header">
             <!-- Logo -->
             <a href="inicio.html" class="logo">
-                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <!-- mini logo para sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>BI</b>BL</span>
-                <!-- logo for regular state and mobile devices -->
+                <!-- logo Para dispositivos de estado y móviles -->
                 <span class="logo-lg"><b>BIBLIOTECA </b> OFELIA</span>
             </a>
-            <!-- Header Navbar: style can be found in header.less -->
+            <!-- Header Navbar: estilo se puede encontrar en header.less -->
             <nav class="navbar navbar-static-top">
                 <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
@@ -130,14 +186,14 @@
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
 
-                        <!-- User Account: style can be found in dropdown.less -->
+                        <!-- cuenta de USUARIO: estilos se puede encontrar en  dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <img src="img/user2-160x160.jpg" class="user-image" alt="User Image">
                                 <span class="hidden-xs">USUARIO</span>
                             </a>
                             <ul class="dropdown-menu">
-                                <!-- User image -->
+                                <!-- imagen usuario -->
                                 <li class="user-header">
                                     <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
@@ -189,27 +245,31 @@
                             <i class="glyphicon glyphicon-edit"></i>
                             <span>Registro</span>
                             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+                              <i class="fa fa-angle-left pull-right"></i>
+                            </span>
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="Libro.html"><i class="fa fa-circle-o"></i>Libro</a></li>
                         </ul>
                         <ul class="treeview-menu">
-                            <li><a href="Alumno.html"><i class="fa fa-circle-o"></i>Alumno</a></li>
-                        </ul>
-                        <ul class="treeview-menu">
                             <li><a href="Docente.html"><i class="fa fa-circle-o"></i>Docente</a></li>
                         </ul>
+                        <ul class="treeview-menu">
+                            <li><a href="Alumno.html"><i class="fa fa-circle-o"></i>Alumno</a></li>
+                        </ul>
+                        <a href="Prestamo.html"><i class="glyphicon glyphicon-book"></i>
+                            <span> Prestamo</span>
 
-
-
-          <a href="Prestamo.html">
-            <i class="glyphicon glyphicon-book"></i>
-            <span> Prestamo</span>
-          </a>
-        </li>
-                           </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="rep_libro.html">
+                            <i class="glyphicon glyphicon-home"></i><span>Reporte</span>
+                            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </section>
             <!-- /.sidebar -->
         </aside>
@@ -219,12 +279,12 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    MODÚLO PRESTAMO
-                    <small>Registrar los prestamos de libros</small>
+                    MODÚLO PRÉSTAMO
+                    <small>Registrar préstamos de libros</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="inicio.html"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
-                    <li class="active">Registrar prestamo</li>
+                    <li class="active">Préstamo</li>
                 </ol>
             </section>
 
@@ -232,68 +292,80 @@
             <section class="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#addAlumno"><i class="ion-person-add"></i> Registrar prestamo</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#addRegistrarPrestamo"><i class="ion-person-add"></i> Registrar prestamo</button>
                         <br><br>
                     </div>
                 </div>
-    <section class="content">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">REGISTRO DE PRESTAMOS</h3>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <table id="example2" class="table table-bordered table-hover">
-                <thead>
-                <tr>
-                  <th><center>#</center></th>
-                  <th><center>Tipo persona</center></th>
-                  <th><center>Persona</center></th>
-                  <th><center>Libro</center></th>
-                  <th><center>Fecha de prestamo</center></th>
-                  <th><center>Forma de prestamo</center></th>
-                  <th><center>Tiempo de prestamo</center></th>
-                  <th><center>Fecha devolucion</center></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                 <td>1</td>
-                 <td>Estudiante</td>
-                 <td>Junior Gadea
-                     </select></td>
-                 <td>Los perros hambrientos</td>
-                 <td>21/03/2017</td>
-                 <td>Presencial</td>
-                 <td>3 dias</td>
-                 <td>24/03/2017</td>
-                </tr>
-                <tr>
-                <td>2</td>
-                 <td>Docente</td>
-                 <td>Jorge Gonzales
-                     </select></td>
-                 <td>Romeo y Julieta</td>
-                 <td>15/05/2017</td>
-                 <td>Online</td>
-                 <td>2 dias</td>
-                 <td>17/05/2017</td>
-                </tr>
-
-
-                </tbody>
-             </table>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-        </div>
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
-    </section>
+                <section class="content">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="box">
+                                <div class="box-header">
+                                    <h3 class="box-title">REGISTRO DE PRESTAMOS</h3>
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <table id="example2" class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <center>#</center>
+                                                </th>
+                                                <th>
+                                                    <center>Tipo persona</center>
+                                                </th>
+                                                <th>
+                                                    <center>Persona</center>
+                                                </th>
+                                                <th>
+                                                    <center>Libro</center>
+                                                </th>
+                                                <th>
+                                                    <center>Fecha de prestamo</center>
+                                                </th>
+                                                <th>
+                                                    <center>Forma de prestamo</center>
+                                                </th>
+                                                <th>
+                                                    <center>Tiempo de prestamo</center>
+                                                </th>
+                                                <th>
+                                                    <center>Fecha devolucion</center>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Alumno</td>
+                                                <td>Junior Gadea</td>
+                                                <td>Los perros hambrientos</td>
+                                                <td>21/03/2017</td>
+                                                <td>Presencial</td>
+                                                <td>3 dias</td>
+                                                <td>24/03/2017</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Docente</td>
+                                                <td>Jorge Gonzales</td>
+                                                <td>Romeo y Julieta</td>
+                                                <td>15/05/2017</td>
+                                                <td>Online</td>
+                                                <td>2 dias</td>
+                                                <td>17/05/2017</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </section>
             </section>
             <!-- /.content -->
         </div>
@@ -304,8 +376,8 @@
             </div>
             <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
         </footer>
-        <!--MODAL DE AGREGAR ALUMNO-->
-        <div class="modal fade" id="addAlumno" tabindex="-1" role="dialog">
+        <!--MODAL DE AGREGAR PRESTAMO-->
+        <div class="modal fade" id="addRegistrarPrestamo" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
 
@@ -320,75 +392,78 @@
                     <div class="modal-body">
 
                         <!--ALERTA DEL MODAL AGREGAR PRESTAMO-->
-                        <div class="alert alert-warning" role="alert" style="opacity: 0.7">
-                            <button class="close" data-dismiss="alert"><span>&times;</span></button>
-                            <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i></strong> Asegurate de llenar todos los campos!
+                        <div class="alert alert-warning" role="alert" style="opacity: 1.5">
+                            <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i>Advertencia: </strong>Asegúrate de llenar todos los campos *
                         </div>
                         <!--FIN de ALERTA DEL MODAL AGREGAR PRESTAMO-->
 
                         <!--FORMULARIO DEL MODAL AGREGAR PRESTAMO-->
-                       <form action="redirectcategoria" method="post" class="form-horizontal">
+                        <form action="redirectcategoria" method="post" class="form-horizontal">
                             <input type="hidden" name="op" value="add">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <!--GRUPO 1-->
                                     <div class="form-group col-md-12">
-                                       <div class="form-group">
-                                              <label for="nombreAlumno" class="col-sm-2 control-label">Tipo Persona: </label>
-                                                 <div class="col-sm-4">
-                                                 <select name="categoria" class="form-control">
+                                        <div class="form-group">
+                                            <label for="tipoPersona" class="col-sm-2 control-label">* Tipo Persona: </label>
+                                            <div class="col-sm-4">
+                                                <select name="categoria" class="form-control">
                                                    <option value="1">Docente</option>
-                                                   <option value="2">Estudiante</option>
+                                                   <option value="2">Alumno</option>
                                                    <option value="3">Externo</option>
                                                 </select>
-                         </div>
-                                            <label for="nombreLibro" class="col-md-2 control-label">Persona:</label>
-                                            <div class="col-md-4">
-                                                <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Buscar persona...">
                                             </div>
-                                       </div>
-                                       <div class="form-group">
-                                            <label for="nombreLibro" class="col-md-2 control-label">Libro:</label>
+                                            <label for="buscarPersona" class="col-md-2 control-label">* Persona:</label>
                                             <div class="col-md-4">
-                                                <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Buscar libro...">
-                                            </div>
-                                            <label for="año" class="col-md-2 control-label">Fecha Prestamo:</label>
-                                            <div class="col-md-4">
-                                                <input name="año" type="date" autocomplete="off" class="form-control" placeholder="">
-                                            </div>
-
-                                       </div>
-                                        <div class="form-group">
-                                             <label for="nombreAlumno" class="col-sm-2 control-label">Forma Prestamo: </label>
-                                                 <div class="col-sm-4">
-                                                 <select name="categoria" class="form-control">
-                                                   <option value="1">Online</option>
-                                                   <option value="2">Presencial</option>
-                                                </select>
-                                                </div>
-                                            <label for="año" class="col-md-2 control-label">Tiempo Prestamo (dias):</label>
-                                            <div class="col-md-4">
-                                                <input name="año" type="number" autocomplete="off" class="form-control" placeholder="">
+                                                <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Buscar persona..." autofocus="autofocus">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                             <label for="año" class="col-md-2 control-label">Fecha Devolucion:</label>
+                                            <label for="nombreLibro" class="col-md-2 control-label">* Libro:</label>
+                                            <div class="col-md-4">
+                                                <input name="nombreLibro" type="search" autocomplete="off" class="form-control" placeholder="Buscar libro...">
+                                            </div>
+                                            <label for="formaPrestamo" class="col-sm-2 control-label">* Forma Prestamo: </label>
+                                            <div class="col-sm-4">
+                                                <select name="categoria" class="form-control">
+                                                   <option value="1">Presencial</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="fechaPrestamo" class="col-md-2 control-label">* Fecha Prestamo:</label>
                                             <div class="col-md-4">
                                                 <input name="año" type="date" autocomplete="off" class="form-control" placeholder="">
                                             </div>
-                                     </div>
-                                     <div class="form-group col-md-4">
+                                            <label for="fechaDevolucion" class="col-md-2 control-label">* Fecha Devolucion:</label>
+                                            <div class="col-md-4">
+                                                <input name="fechaDevolucion" type="date" value="" autocomplete="off" class="form-control" placeholder="">
+                                            </div>
 
-                                     </div>
-                            <!--FIN del GRUPO 1-->
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tiempoPrestamo" class="col-md-2 control-label">* Tiempo Prestamo (dias):</label>
+                                            <div class="col-md-2">
+                                                <input name="tiempoPrestamo" type="number" autocomplete="off" class="form-control" placeholder="">
+                                            </div>
 
-                            <!--FOOTER O PIE DE PAGINA DEL MODAL AGREGAR PRESTAMO-->
-                            <div class="modal-footer">
+                                        </div>
+                                        <div class="form-group col-md-4">
 
-                                <button type="submit" class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
-                                <a class="btn btn-info">Limpiar</a>
-                                <a class="btn btn-danger" data-dismiss="modal">Cerrar</a>
+                                        </div>
+                                        <!--FIN del GRUPO 1-->
 
+                                        <!--FOOTER O PIE DE PAGINA DEL MODAL AGREGAR PRESTAMO-->
+                                        <div class="modal-footer">
+
+                                            <button type="submit" class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
+                                            <a class="btn btn-info">Limpiar</a>
+                                            <a class="btn btn-danger" data-dismiss="modal">Cerrar</a>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!--FIN del FOOTER O PIE DE PAGINA DEL MODAL AGREGAR PRESTAMO-->
                         </form>
@@ -407,7 +482,6 @@
         <script src="js/app.min.js"></script>
     </div>
     <!-- ./wrapper -->
-
 
 </body>
 
