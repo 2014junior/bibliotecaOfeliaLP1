@@ -226,8 +226,8 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    MODÚLO PERSONA
-                    <small>Registrar a personas</small>
+                    MODÚLO REGISTRO
+                    <small>Registrar docentes</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="inicio.html"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
@@ -344,9 +344,8 @@
                     <div class="modal-body">
 
                         <!--ALERTA DEL MODAL AGREGAR DOCENTE-->
-                        <div class="alert alert-warning" role="alert" style="opacity: 1.0">
-                            <button class="close" data-dismiss="alert"><span>&times;</span></button>
-                            <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i>Advertencia !</strong> Asegurate de llenar todos los campos *!
+                        <div class="alert alert-warning" role="alert" style="opacity: 1.5">
+                            <strong style="color: #ffffff;"><i class="icon fa fa-warning"></i>Advertencia: </strong>Asegúrate de llenar todos los campos *
                         </div>
                         <!--FIN de ALERTA DEL MODAL AGREGAR ALUMNO-->
 
@@ -363,11 +362,11 @@
 
                                             <label for="nombreDocente" class="col-sm-2 control-label">* Nombres:</label>
                                             <div class="col-sm-4">
-                                                <input name="nombreDocente" type="text" autocomplete="off" class="form-control" placeholder="Nombre del docente...">
+                                                <input name="nombreDocente" type="text" autocomplete="off" class="form-control" placeholder="Nombre del docente" title="Nombre del docente">
                                             </div>
                                             <label for="apellidoDocente" class="col-sm-2 control-label">* Apellidos: </label>
                                             <div class="col-sm-4">
-                                                <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Apellidos del docente...">
+                                                <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Apellidos del docente" title="Apellidos del docente">
                                             </div>
 
                                         </div>
@@ -377,14 +376,14 @@
 
                                             <label for="generoDocente" class="col-sm-2 control-label ">* Género: </label>
                                             <div class="col-sm-4 ">
-                                                <select name="categoria" class="form-control btn btn-default">
+                                                <select name="categoria" class="form-control btn btn-default" title="Género del docente">
                                    <option value="1">Masculino</option>
                                    <option value="2">Femenino</option>
                                </select>
                                             </div>
                                             <label for="apellidoAlumno" class="col-sm-2 control-label">* Fecha de nacimiento: </label>
                                             <div class="col-sm-4">
-                                                <input name="apellidoAlumno" type="date" autocomplete="off" class="form-control" placeholder="Apellido de alumno...">
+                                                <input name="apellidoAlumno" type="date" autocomplete="off" class="form-control" placeholder="Fecha de nacimiento" title="Fecha de nacimiento">
                                             </div>
 
                                         </div>
@@ -394,70 +393,75 @@
                                         <div class="form-group">
                                             <label for="tipodocumento" class="col-sm-2 control-label">* Tipo de documento:</label>
                                             <div class="col-sm-4">
-                                                <select class="btn btn-default">
-                                        <option value="1">DNI</option>
-                                        <option value="2">Pasaporte</option>
-                                        <option value="3">RUC</option>
-                                     </select>
+                                                <select class="btn btn-default" title="Tipo de documento">
+                                                    <option value="1">DNI</option>
+                                                    <option value="2">Pasaporte</option>
+                                                    <option value="3">RUC</option>
+                                                </select>
                                             </div>
-                                            <label for="número" class="col-sm-2 control-label">* Número documento:</label>
+                                            <label for="númeroDocumento" class="col-sm-2 control-label">* Número documento:</label>
                                             <div class="col-sm-4">
-                                                <input name="numerodocumento" type="text" autocomplete="off" class="form-control" placeholder="Número de documento">
+                                                <input name="numerodocumento" type="text" autocomplete="off" class="form-control" placeholder="Número de documento" title="Número de documento">
                                             </div>
                                         </div>
 
                                         <!--GRUPO 1-->
                                         <div class="form-group">
 
-                                            <label for="nombreAlumno" class="col-sm-2 control-label">* Dirección:</label>
+                                            <label for="direccionDocente" class="col-sm-2 control-label">* Dirección:</label>
                                             <div class="col-sm-4">
-                                                <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Dirección del docente...">
+                                                <input name="direccionDocente" type="text" autocomplete="off" class="form-control" placeholder="Dirección del docente" title="Dirección del docente">
                                             </div>
-                                            <label for="nombreAlumno" class="col-sm-2 control-label">* Turno: </label>
+                                            <label for="turnoDocente" class="col-sm-2 control-label">* Turno: </label>
                                             <div class="col-sm-4">
-                                                <select class="btn btn-default">
-                                   <option value="1">Mañana</option>
-                                   <option value="1">Tarde</option>
-                              </select>
+                                                <select class="btn btn-default" title="Turno de enseñanza">
+                                                   <option value="1">Mañana</option>
+                                                   <option value="2">Tarde</option>
+                                               </select>
                                             </div>
                                         </div>
 
 
                                         <div class="form-group">
 
-                                            <label for="generoDocente" class="col-sm-2 control-label">* Código modular: </label>
+                                            <label for="codigoModular" class="col-sm-2 control-label">* Código modular: </label>
                                             <div class="col-sm-4">
-                                                <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Código modular...">
+                                                <input name="codigoModular" type="text" autocomplete="off" class="form-control" placeholder="Código modular" title="Código modular del docente">
                                             </div>
-                                            <label for="apellidoAlumno" class="col-sm-2 control-label">* Código de plaza </label>
+                                            <label for="codigoplaza" class="col-sm-2 control-label">* Código de plaza </label>
                                             <div class="col-sm-4">
-                                                <input name="nombreAlumno" type="text" autocomplete="off" class="form-control" placeholder="Código de plaza...">
-                                            </div>
-
-                                        </div>
-
-                                        <div class="form-group">
-
-                                            <label for="nombreDocente" class="col-sm-2 control-label">* Título:</label>
-                                            <div class="col-sm-4">
-                                                <input name="nombreDocente" type="text" autocomplete="off" class="form-control" placeholder="Título...">
-                                            </div>
-                                            <label for="apellidoDocente" class="col-sm-2 control-label">* Especialidad: </label>
-                                            <div class="col-sm-4">
-                                                <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Especialidad...">
+                                                <input name="codigoplaza" type="text" autocomplete="off" class="form-control" placeholder="Código de plaza" title="Código de plaza">
                                             </div>
 
                                         </div>
 
                                         <div class="form-group">
 
-                                            <label for="nombreDocente" class="col-sm-2 control-label">* Escala:</label>
+                                            <label for="tituloAcademico" class="col-sm-2 control-label">* Título:</label>
                                             <div class="col-sm-4">
-                                                <input name="nombreDocente" type="text" autocomplete="off" class="form-control" placeholder="Número de escala...">
+                                                <input name="tituloAcademico" type="text" autocomplete="off" class="form-control" placeholder="Título académico" title="Título académico">
                                             </div>
-                                            <label for="apellidoDocente" class="col-sm-2 control-label">* Condición laboral: </label>
+                                            <label for="especialidadDocente" class="col-sm-2 control-label">* Especialidad: </label>
                                             <div class="col-sm-4">
-                                                <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Condición laboral...">
+                                                <input name="especialidadDocente" type="text" autocomplete="off" class="form-control" placeholder="Especialidad" title="Especialidad del docente">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group">
+
+                                            <label for="escalaDocente" class="col-sm-2 control-label">* Escala:</label>
+                                            <div class="col-sm-4">
+                                                <input name="escalaDocente" type="number" autocomplete="off" class="form-control" placeholder="Número de escala" title="Número de escala">
+                                            </div>
+                                            <label for="condicionLaboral" class="col-sm-2 control-label">* Condición laboral: </label>
+                                            <div class="col-sm-4">
+                                                <select class="btn btn-default"  title="Condición laboral del docente">
+                                                   <option value="1">Nombrado</option>
+                                                   <option value="2">Contratado</option>
+                                                   <option value="3">Encargado</option>
+                                                   <option value="4">Designado</option>
+                                               </select>
                                             </div>
 
                                         </div>
@@ -465,24 +469,25 @@
                                         <div class="form-group">
 
                                             <label for="nombreDocente" class="col-sm-2 control-label">* Tiempo de servicios:</label>
-                                            <div class="col-sm-4">
-                                                <input name="nombreDocente" type="text" autocomplete="off" class="form-control" placeholder="Número deltiempo de servicio...">
+                                            <div>
+                                               <div  class="col-sm-2">
+                                                <input name="nombreDocente" type="number" autocomplete="off" class="form-control" placeholder="Tiempo de servicio" title="Tiempo de servicio">
+                                                </div>
+                                                <select class="col-sm-1 btn btn-default" title="Tiempo de servicio">
+                                                    <option value="1">años</option>
+                                                    <option value="2">meses</option>
+                                                </select>
+
                                             </div>
-                                            <label for="apellidoDocente" class="col-sm-2 control-label">* Cargo: </label>
+
+                                            <label for="apellidoDocente" class="col-sm-3 control-label">* Cargo: </label>
                                             <div class="col-sm-4">
-                                                <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Nombre del cargo...">
+                                                <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Nombre del cargo">
+
                                             </div>
 
                                         </div>
                                         <div class="form-group">
-                                            <label for="tipoDocente" class="col-sm-2 control-label">* Tipo de docente:</label>
-                                            <div class="col-sm-4">
-                                                <select class="btn btn-default">
-                                                       <option value="1">Contratado</option>
-                                                       <option value="1">Nombrado</option>
-                                                </select>
-                                            </div>
-
                                             <label for="telefonoDocente" class="col-sm-2 control-label">* Teléfono:</label>
                                             <div class="col-sm-4">
                                                 <input name="telefonoDocente" type="text" autocomplete="off" class="form-control" placeholder="Número de teléfono...">
