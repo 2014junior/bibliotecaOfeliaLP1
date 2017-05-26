@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Biblioteca | Reg. Alumno</title>
+    <title>Biblioteca | Reg. Docente</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
@@ -193,24 +193,21 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="Libro.html"><i class="fa fa-circle-o"></i>Libro</a></li>
+                            <li><a href="Libro.html"><i class="fa fa-book"></i>Libro</a></li>
                         </ul>
                         <ul class="treeview-menu">
-                            <li><a href="Docente.html"><i class="fa fa-circle-o"></i>Docente</a></li>
+                            <li><a href="Docente.html"><i class="fa fa-suitcase"></i>Docente</a></li>
                         </ul>
                         <ul class="treeview-menu">
-                            <li><a href="Alumno.html"><i class="fa fa-circle-o"></i>Alumno</a></li>
+                            <li><a href="Alumno.html"><i class="fa fa-mortar-board"></i>Alumno</a></li>
                         </ul>
                         <a href="Prestamo.html"><i class="glyphicon glyphicon-book"></i>
                             <span>Prestamo</span>
-                            <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                            </span>
                         </a>
                     </li>
                     <li>
                         <a href="rep_libro.html">
-                            <i class="glyphicon glyphicon-home"></i><span>Reporte</span></a>
+                            <i class="glyphicon glyphicon-stats"></i><span> Reporte</span></a>
                     </li>
                 </ul>
             </section>
@@ -227,10 +224,11 @@
             <section class="content-header">
                 <h1>
                     MODÚLO REGISTRO
-                    <small>Registrar docentes</small>
+                    <small>Registrar docente</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="inicio.html"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
+                    <li class="active">Registro</li>
                     <li class="active">Registar Docente</li>
                 </ol>
             </section>
@@ -239,7 +237,7 @@
             <section class="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#addAlumno">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#addDocente">
                         <i class="ion-person-add"></i> Registrar docente</button>
 
                         <br><br>
@@ -263,22 +261,16 @@
                                                     <thead>
                                                         <tr role="row">
                                                             <th><center>#</center></th>
-                                                            <th><center>Nombre</center></th>
+                                                            <th><center>Nombres</center></th>
                                                             <th><center>Apellidos</center></th>
                                                             <th><center>Género</center></th>
-                                                            <th><center>Fecha de nacimiento</center></th>
-                                                            <th><center>Tipo de documento</center></th>
+                                                            <th><center>Nacimiento</center></th>
+                                                            <th><center>Documento</center></th>
+                                                            <th><center>N° Documento</center></th>
                                                             <th><center>Dirección</center></th>
                                                             <th><center>Turno</center></th>
-                                                            <th><center>Código modular</center></th>
-                                                            <th><center>Código de plaza</center></th>
                                                             <th><center>Título</center></th>
-                                                            <th><center>Especialidad</center></th>
-                                                            <th><center>Escala</center></th>
                                                             <th><center>Condición laboral</center></th>
-                                                            <th><center>Tiempo de servicios</center></th>
-                                                            <th><center>Cargo</center></th>
-                                                            <th><center>Tipo de docente</center></th>
                                                             <th><center>Teléfono</center></th>
                                                             <th><center>Acción</center></th>
                                                             <th><center>Observación</center></th>
@@ -287,23 +279,39 @@
                                                     <tbody>
                                                         <tr role="row" class="odd">
                                                             <td class="sorting_1">1</td>
-                                                            <td>asas</td>
-                                                            <td>asasas</td>
-                                                            <td>asas</td>
-                                                            <td>asasas</td>
-                                                            <td>asas</td>
-                                                            <td>asasas</td>
-                                                            <td>asasas</td>
-                                                            <td>asasas</td>
-                                                            <td>asasas</td>
-                                                            <td>asasas</td>
-                                                            <td>asasas</td>
-                                                            <td>asasas</td>
-                                                            <td>asasas</td>
-                                                            <td>asasas</td>
-                                                            <td>asasas</td>
-                                                            <td>asasas</td>
-                                                            <td>asasas</td>
+                                                            <td>Nancy</td>
+                                                            <td>Reategui Flores</td>
+                                                            <td>Femenino</td>
+                                                            <td>23/08/1972</td>
+                                                            <td>DNI</td>
+                                                            <td>00906108</td>
+                                                            <td>La Planicie</td>
+                                                            <td>Mañana</td>
+                                                            <td>waefdfsdf</td>
+                                                            <td>Nombrada</td>
+                                                            <td>969566519</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                                                    <a class="btn btn-danger btn-xs" href="#" role="button"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                                                                </center>
+                                                            </td>
+                                                            <td></td>
+                                                        </tr>
+
+                                                        <tr role="row" class="odd">
+                                                            <td class="sorting_1">2</td>
+                                                            <td>Mary</td>
+                                                            <td>Lopez Cardenas</td>
+                                                            <td>Femenino</td>
+                                                            <td>18/02/1975</td>
+                                                            <td>DNI</td>
+                                                            <td>00906155</td>
+                                                            <td>Morales</td>
+                                                            <td>Tarde</td>
+                                                            <td>waefdfsdf</td>
+                                                            <td>Contratada</td>
+                                                            <td>969566519</td>
                                                             <td>
                                                                 <center>
                                                                     <a class="btn btn-info btn-xs" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> </a>
@@ -329,7 +337,7 @@
         </div>
 
         <!--MODAL DE AGREGAR ALUMNO-->
-        <div class="modal fade" id="addAlumno" tabindex="-1" role="dialog">
+        <div class="modal fade" id="addDocente" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
 
@@ -422,18 +430,7 @@
                                         </div>
 
 
-                                        <div class="form-group">
 
-                                            <label for="codigoModular" class="col-sm-2 control-label">* Código modular: </label>
-                                            <div class="col-sm-4">
-                                                <input name="codigoModular" type="text" autocomplete="off" class="form-control" placeholder="Código modular" title="Código modular del docente">
-                                            </div>
-                                            <label for="codigoplaza" class="col-sm-2 control-label">* Código de plaza </label>
-                                            <div class="col-sm-4">
-                                                <input name="codigoplaza" type="text" autocomplete="off" class="form-control" placeholder="Código de plaza" title="Código de plaza">
-                                            </div>
-
-                                        </div>
 
                                         <div class="form-group">
 
@@ -441,19 +438,7 @@
                                             <div class="col-sm-4">
                                                 <input name="tituloAcademico" type="text" autocomplete="off" class="form-control" placeholder="Título académico" title="Título académico">
                                             </div>
-                                            <label for="especialidadDocente" class="col-sm-2 control-label">* Especialidad: </label>
-                                            <div class="col-sm-4">
-                                                <input name="especialidadDocente" type="text" autocomplete="off" class="form-control" placeholder="Especialidad" title="Especialidad del docente">
-                                            </div>
 
-                                        </div>
-
-                                        <div class="form-group">
-
-                                            <label for="escalaDocente" class="col-sm-2 control-label">* Escala:</label>
-                                            <div class="col-sm-4">
-                                                <input name="escalaDocente" type="number" autocomplete="off" class="form-control" placeholder="Número de escala" title="Número de escala">
-                                            </div>
                                             <label for="condicionLaboral" class="col-sm-2 control-label">* Condición laboral: </label>
                                             <div class="col-sm-4">
                                                 <select class="btn btn-default"  title="Condición laboral del docente">
@@ -466,39 +451,14 @@
 
                                         </div>
 
-                                        <div class="form-group">
 
-                                            <label for="nombreDocente" class="col-sm-2 control-label">* Tiempo de servicios:</label>
-                                            <div>
-                                               <div  class="col-sm-2">
-                                                <input name="nombreDocente" type="number" autocomplete="off" class="form-control" placeholder="Tiempo de servicio" title="Tiempo de servicio">
-                                                </div>
-                                                <select class="col-sm-1 btn btn-default" title="Tiempo de servicio">
-                                                    <option value="1">años</option>
-                                                    <option value="2">meses</option>
-                                                </select>
-
-                                            </div>
-
-                                            <label for="apellidoDocente" class="col-sm-3 control-label">* Cargo: </label>
-                                            <div class="col-sm-4">
-                                                <input name="apellidoDocente" type="text" autocomplete="off" class="form-control" placeholder="Nombre del cargo">
-
-                                            </div>
-
-                                        </div>
                                         <div class="form-group">
                                             <label for="telefonoDocente" class="col-sm-2 control-label">* Teléfono:</label>
                                             <div class="col-sm-4">
-                                                <input name="telefonoDocente" type="text" autocomplete="off" class="form-control" placeholder="Número de teléfono...">
+                                                <input name="telefonoDocente" type="text" autocomplete="off" class="form-control" placeholder="Número de teléfono">
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                           <label for="descripcionDocente" class="col-sm-2 control-label">* Descripción</label>
-                                            <div class="col-sm-10">
-                                                <textarea name="descripcionDocente" rows="5" cols="110" class="form-control" placeholder="Escribe aquí una breve descripción del libro..."></textarea>
-                                            </div>
-                                        </div>
+
 
 
 
@@ -506,8 +466,7 @@
                                         <div class="modal-footer">
 
                                             <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
-                                            <a class="btn btn-warning "><i class="glyphicon glyphicon-erase" aria-hidden="true"></i>Limpiar</a>
-                                            <a class="btn btn-default" data-dismiss="modal">Cerrar</a>
+                                            <a class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i> Cerrar</a>
 
                                         </div>
                                     </div>
