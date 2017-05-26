@@ -285,7 +285,7 @@
                                     <div class="container-fluid">
                                         <div class="col-lg-12">
                                             <div class="table-responsive">
-                                                <table  id="tablaLibros" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                                                <table id="tablaLibros" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
                                                     <thead>
                                                         <tr role="row">
                                                             <th>#</th>
@@ -679,7 +679,6 @@
                                             <div class="col-md-5">
                                                 <input name="nombreAutor" type="text" autocomplete="off" class="form-control" placeholder="Autor" title="Autor">
                                             </div>
-
                                             <label for="numeroSerie" class="col-md-2 control-label">* N° Serie:</label>
                                             <div class="col-md-3">
                                                 <input name="numeroSerie" type="number" autocomplete="off" class="form-control" placeholder="Serie" title="Serie">
@@ -687,107 +686,145 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="nombreEdicion" class="col-md-2 control-label">* Edicion:</label>
-                                            <div class="col-md-5">
-                                                <input name="nombreEdicion" type="text" autocomplete="off" class="form-control" placeholder="Edición" title="Edición">
-                                            </div>
-
-                                            <label for="nombreEditorial" class="col-md-2 control-label">* Editorial:</label>
+                                            <label for="categoriaLibro" class="col-md-2 control-label">* Categoría:</label>
                                             <div class="col-md-3">
-                                                <input name="nombreEditorial" type="text" autocomplete="off" class="form-control" placeholder="Editorial" title="Editorial">
+                                                <select class="btn btn-default" name="categoriaLibro" id="">
+                                                    <li><option value="1">Generalidades</option></li>
+                                                    <ul><li><a href="">Submenu1</a></li></ul>
+                                                    <option value="2">Filosofía y psicología</option>
+                                                    <option value="3">Religión</option>
+                                                    <option value="4">Ciencias Sociales</option>
+                                                    <option value="5">Lenguas</option>
+                                                    <option value="4">Ciencias Naturales y Matemáticas</option>
+                                                    <option value="4">Tecnología</option>
+                                                    <option value="4">Las Artes</option>
+                                                    <option value="4">Literatura y retórica</option>
+                                                    <option value="4">Geografía e historia</option>
+
+                                                </select>
+                                            </div>
+                                            <label for="subCategoriaLibro" class="col-md-3 control-label">* SubCategoría:</label>
+                                            <div class="col-md-4 text-right">
+                                                <select class=" btn btn-default" name="subCategoriaLibro" id="">
+                                                    <option value="1">Generalidades</option>
+                                                    <option value="2">Filosofía y psicología</option>
+                                                    <option value="3">Religión</option>
+                                                    <option value="4">Ciencias Sociales</option>
+                                                    <option value="5">Lenguas</option>
+                                                    <option value="4">Ciencias Naturales y Matemáticas</option>
+                                                    <option value="4">Tecnología</option>
+                                                    <option value="4">Las Artes</option>
+                                                    <option value="4">Literatura y retórica</option>
+                                                    <option value="4">Geografía e historia</option>
+
+                                            </select>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="nombreproveedor" class="col-md-2 control-label">* Proveedor:</label>
-                                            <div class="col-md-5">
-                                                <input name="nombreproveedor" type="text" autocomplete="off" class="form-control" placeholder="Proveedor" title="Proveedor">
-                                            </div>
-                                            <label for="cantidadEjemplar" class="col-md-2 control-label">* Ejemplar:</label>
-                                            <div class="col-md-3">
-                                                <input name="cantidadEjemplar" type="number" autocomplete="off" class="form-control" placeholder="Ejemplar" title="Ejemplares">
-                                            </div>
 
+                                    <div class="form-group">
+
+                                        <label for="nombreEdicion" class="col-md-2 control-label">* Edicion:</label>
+                                        <div class="col-md-5">
+                                            <input name="nombreEdicion" type="text" autocomplete="off" class="form-control" placeholder="Edición" title="Edición">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="estadoLibro" class="col-md-2 control-label">* Estado:</label>
-                                            <div class="col-md-5">
-                                                <select class=" btn btn-default" name="estadoLibro" id="">
+
+                                        <label for="nombreEditorial" class="col-md-2 control-label">* Editorial:</label>
+                                        <div class="col-md-3">
+                                            <input name="nombreEditorial" type="text" autocomplete="off" class="form-control" placeholder="Editorial" title="Editorial">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nombreproveedor" class="col-md-2 control-label">* Proveedor:</label>
+                                        <div class="col-md-5">
+                                            <input name="nombreproveedor" type="text" autocomplete="off" class="form-control" placeholder="Proveedor" title="Proveedor">
+                                        </div>
+                                        <label for="cantidadEjemplar" class="col-md-2 control-label">* Ejemplar:</label>
+                                        <div class="col-md-3">
+                                            <input name="cantidadEjemplar" type="number" autocomplete="off" class="form-control" placeholder="Ejemplar" title="Ejemplares">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="estadoLibro" class="col-md-2 control-label">* Estado:</label>
+                                        <div class="col-md-5">
+                                            <select class=" btn btn-default" name="estadoLibro" id="">
                                                    <option value="1">Estado</option>
                                                    <option value="2">Bueno</option>
                                                    <option value="3">Regular</option>
                                                    <option value="4">Malo</option>
                                                </select>
-                                            </div>
-                                            <label for="cantidadPaginas" class="col-md-2 control-label">* Páginas:</label>
-                                            <div class="col-md-3">
-                                                <input name="cantidadPaginas" type="number" autocomplete="off" class="form-control" placeholder="Páginas" title="Páginas">
-                                            </div>
-
                                         </div>
-
-                                        <div class="form-group">
-                                            <label for="añoPublicacion" class="col-md-2 control-label">* Año:</label>
-                                            <div class="col-md-2">
-                                                <input name="añoPublicacion" type="number" autocomplete="off" class="form-control" placeholder="Año de pub.." title="Año de publicación">
-                                            </div>
-                                            <label for="precioLibro" class="col-md-5 control-label">* Precio:</label>
-                                            <div class="col-md-3 pull-right">
-                                                <input name="precioLibro" type="number" autocomplete="off" class="form-control" placeholder="Precio" title="Precio">
-                                            </div>
-
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="descripcionLibro" class="col-sm-2 control-label">* Descripción</label>
-                                            <div class="col-sm-10">
-                                                <textarea name="descripcionLibro" rows="5" cols="110" class="form-control" placeholder="Escribe aquí una breve descripción del libro..."></textarea>
-                                            </div>
+                                        <label for="cantidadPaginas" class="col-md-2 control-label">* Páginas:</label>
+                                        <div class="col-md-3">
+                                            <input name="cantidadPaginas" type="number" autocomplete="off" class="form-control" placeholder="Páginas" title="Páginas">
                                         </div>
 
                                     </div>
 
-                                    <!--FOOTER O PIE DE PAGINA DEL MODAL AGREGAR ALUMNO-->
-                                    <div class="modal-footer">
-
-                                        <button type="submit" class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i> Registrar</button>
-                                        <a class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i> Cerrar</a>
+                                    <div class="form-group">
+                                        <label for="añoPublicacion" class="col-md-2 control-label">* Año:</label>
+                                        <div class="col-md-2">
+                                            <input name="añoPublicacion" type="number" autocomplete="off" class="form-control" placeholder="Año de pub.." title="Año de publicación">
+                                        </div>
+                                        <label for="precioLibro" class="col-md-5 control-label">* Precio:</label>
+                                        <div class="col-md-3 pull-right">
+                                            <input name="precioLibro" type="number" autocomplete="off" class="form-control" placeholder="Precio" title="Precio">
+                                        </div>
 
                                     </div>
+                                    <div class="form-group">
+                                        <label for="descripcionLibro" class="col-sm-2 control-label">* Descripción</label>
+
+                                        <div class="col-sm-10">
+                                            <textarea name="descripcionLibro" rows="5" cols="110" class="form-control" placeholder="Escribe aquí una breve descripción del libro..."></textarea>
+                                        </div>
+                                    </div>
+
                                 </div>
-                            </div>
 
+                                <!--FOOTER O PIE DE PAGINA DEL MODAL AGREGAR ALUMNO-->
+                                <div class="modal-footer">
 
-                            <!--FIN del FOOTER O PIE DE PAGINA DEL MODAL AGREGAR ALUMNO-->
-                        </form>
-                        <!--FIN del FORMULARIO DEL MODAL AGREGAR ALUMNO-->
+                                    <button type="submit" class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i> Registrar</button>
+                                    <a class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i> Cerrar</a>
 
+                                </div>
+                            </div></div>
                     </div>
-                    <!--FIN del CUERPO DEL MODAL AGREGAR ALUMNO-->
+
+
+                    <!--FIN del FOOTER O PIE DE PAGINA DEL MODAL AGREGAR ALUMNO-->
+                    </form>
+                    <!--FIN del FORMULARIO DEL MODAL AGREGAR ALUMNO-->
 
                 </div>
+                <!--FIN del CUERPO DEL MODAL AGREGAR ALUMNO-->
+
             </div>
         </div>
-        <!--FIN del MODAL DE AGREGAR ALUMNO-->
+    </div>
+    <!--FIN del MODAL DE AGREGAR ALUMNO-->
 
 
-        <!-- :::::::::::::::  Fin del contenido ::::::::::::::::::-->
+    <!-- :::::::::::::::  Fin del contenido ::::::::::::::::::-->
 
 
-        <!-- Aqui empieza el FOOTER  -->
-        <footer class="main-footer">
-            <div class="pull-right hidden-xs">
-                <b>Version</b> 2.3.8
-            </div>
-            <strong>Copyright &copy; 2014-2016 Almsaeed Studio</strong> All rights reserved.
-        </footer>
-        <!-- Aqui termina el FOOTER  -->
+    <!-- Aqui empieza el FOOTER  -->
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> 2.3.8
+        </div>
+        <strong>Copyright &copy; 2014-2016 Almsaeed Studio</strong> All rights reserved.
+    </footer>
+    <!-- Aqui termina el FOOTER  -->
 
 
 
 
-        <!-- Bootstrap 3.3.6 -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- AdminLTE App -->
-        <script src="js/app.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="js/app.min.js"></script>
     </div>
     <!-- ./wrapper -->
 
